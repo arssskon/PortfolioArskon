@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital@1&display=swap" rel="stylesheet">
+  <script src="./image-slot.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+</helmet>
+
+<div class="page">
+
+  <nav class="sticky-1">
+    <a href="#hero" class="text-1">Arseny K. <span class="text-2">✱</span></a>
+    <div class="row-1">
+      <a href="#work" style="font-size: 15px; border-bottom: none; display: flex; align-items: center; gap: 4px; color: {{ navWorkColor }};">Work<sc-if value="{{ navWorkActive }}" hint-placeholder-val="{{ false }}"><span class="text-2">✱</span></sc-if></a>
+      <a href="#about" style="font-size: 15px; border-bottom: none; display: flex; align-items: center; gap: 4px; color: {{ navAboutColor }};">About<sc-if value="{{ navAboutActive }}" hint-placeholder-val="{{ false }}"><span class="text-2">✱</span></sc-if></a>
+      <a href="#contact" style="font-size: 15px; border-bottom: none; display: flex; align-items: center; gap: 4px; color: {{ navContactColor }};">Contact<sc-if value="{{ navContactActive }}" hint-placeholder-val="{{ false }}"><span class="text-2">✱</span></sc-if></a>
+    </div>
+    <div class="row-2">
+      <span class="dot-1"></span>
+      <span class="text-3">Available</span>
+    </div>
+  </nav>
+
+  <main class="u-1">
+
+    <!-- HERO -->
+
+
+    <!-- WORK -->
+    <section id="hero" class="u-2">
+      <div class="label-1">Hello — I'm Arseny, a product / UX designer</div>
+
+      <div class="hero-headline pos-2">
+        <h1 class="hero-h1 heading-1">
+          <span>PLATFORMS</span> <span class="u-3">built from</span> <span>STRUCTURE</span><br class="hero-break">
+          <span class="u-3">to</span> <span>INTERFACE</span> <span class="u-3">for</span> <span class="u-4">E-COMMERCE,</span><br class="hero-break">
+          <span>MANUFACTURING</span> <span class="u-3">&amp;</span> <span>FOREIGN TRADE</span>
+        </h1>
+
+
+
+
+
+
+      <div class="badge hero-badge-1" style-hover="transform: rotate(0deg);"><b class="u-5">Structure</b> first</div></div>
+
+      <p class="text-4">I take projects end to end — research, information architecture, design systems, and interfaces across every breakpoint. Most sites I inherit aren't broken visually. They're unlabeled, unranked, and routed to no one in particular.</p>
+
+      <a href="#work" class="u-6">Selected work <span class="u-7" style-hover="transform: translateY(3px);">↓</span></a>
+    <div class="badge hero-badge-3" style-hover="transform: rotate(0deg);"><b class="u-5">320 → 1920</b> breakpoints</div></section><section id="work" ref="{{ setWorkRef }}" class="text-5">
+      <div class="u-8">Work</div>
+
+      <div class="row-3">
+        <a href="./Interior Decor Case Study.dc.html" class="u-9">
+          <div class="card-1" style-hover="transform: scale(1.015); box-shadow: 0 20px 60px rgba(0,0,0,0.14);">
+            <div class="u-10">
+              <span class="mockup__dot mockup__dot--red"></span>
+              <span class="mockup__dot mockup__dot--yellow"></span>
+              <span class="mockup__dot mockup__dot--green"></span>
+            </div>
+            <div class="u-11">
+              <image-slot id="wk-interior-decor" shape="rect" class="u-12" placeholder="Interior Decor homepage, top of page"></image-slot>
+            </div>
+          </div>
+          <div class="text-6">
+            <div class="row-4">
+              <span class="item-index item-index--lg">01</span>
+              <span class="text-7" style-hover="color: #C1714A; transform: translate(3px, -3px);">↗</span>
+            </div>
+            <p class="text-8"><span class="u-13">A store for 80,000 products</span> — where retail shoppers and wholesale partners needed the same catalog to behave differently.</p>
+            <div class="u-14">E-commerce, Design system, B2B / B2C</div>
+            <div class="text-9">→ 80,000+ products structured across 3 breakpoints</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row-5">
+        <a href="./Dariela Case Study.dc.html" class="u-9">
+          <div class="card-1" style-hover="transform: scale(1.015); box-shadow: 0 20px 60px rgba(0,0,0,0.14);">
+            <div class="u-10">
+              <span class="mockup__dot mockup__dot--red"></span>
+              <span class="mockup__dot mockup__dot--yellow"></span>
+              <span class="mockup__dot mockup__dot--green"></span>
+            </div>
+            <div class="u-11">
+              <image-slot id="wk-dariela" shape="rect" class="u-12" placeholder="Dariela homepage, top of page"></image-slot>
+            </div>
+          </div>
+          <div class="text-6">
+            <div class="row-4">
+              <span class="item-index item-index--lg">02</span>
+              <span class="text-7" style-hover="color: #C1714A; transform: translate(3px, -3px);">↗</span>
+            </div>
+            <p class="text-8"><span class="u-13">A platform for a food producer</span> — three brochure pages rebuilt into parallel retail and wholesale streams.</p>
+            <div class="u-14">Redesign, E-commerce, Design system</div>
+            <div class="text-9">→ 3 → 10+ page types, design system built from zero</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="row-6">
+        <a href="./IMPOS TRADE - v2.dc.html" class="u-9">
+          <div class="card-1" style-hover="transform: scale(1.015); box-shadow: 0 20px 60px rgba(0,0,0,0.14);">
+            <div class="u-10">
+              <span class="mockup__dot mockup__dot--red"></span>
+              <span class="mockup__dot mockup__dot--yellow"></span>
+              <span class="mockup__dot mockup__dot--green"></span>
+            </div>
+            <div class="u-15">
+              <image-slot id="wk-impostrade" shape="rect" src="./assets/impostrade-cover.png" class="u-12" placeholder="IMPOS TRADE homepage, top of page — dark theme"></image-slot>
+            </div>
+          </div>
+          <div class="text-6">
+            <div class="row-4">
+              <span class="item-index item-index--lg">03</span>
+              <span class="text-7" style-hover="color: #C1714A; transform: translate(3px, -3px);">↗</span>
+            </div>
+            <p class="text-8"><span class="u-13">A site that had to earn trust first</span> — customs and logistics, where clients hand over large sums and legal liability before the first call.</p>
+            <div class="u-14">B2B, Dark theme, 13 page types, RU/CN architecture</div>
+            <div class="text-9">→ 40+ service landings across 5 breakpoints</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" ref="{{ setAboutRef }}" class="text-5">
+      <div class="u-16">About</div>
+
+      <div class="row-7">
+        <div class="row-8">
+          <p class="text-10">Most projects arrive with the same problem. The content exists, the services exist, the proof exists — but nothing is labeled, ranked, or routed to the right visitor. The visual layer is rarely what's broken.</p>
+          <p class="hero-intro-copy">So I start with the architecture: who is arriving, what they need to see first, and what has to be true before they act. Colors, type, and components come after.</p>
+        </div>
+        <div class="row-8">
+          <p class="text-10">Every project here went through that sequence, and every design system on this page was built from zero rather than assembled from a kit — tokens, component states, spacing scales, icon sets, handoff documentation.</p>
+          <p class="hero-intro-copy">Recent work spans an 80,000-product e-commerce catalog, a food manufacturer's B2B and B2C platform, and a foreign-trade company with 40+ service landings.</p>
+        </div>
+      </div>
+
+      <div class="row-9">
+        <div class="row-10">
+          <div class="text-11">Research &amp; architecture</div>
+          <div class="text-12">Competitor and market analysis<br>User and business goal mapping<br>Information architecture<br>Navigation and mega-menu structure<br>Content inventory and labeling</div>
+        </div>
+        <div class="row-10">
+          <div class="text-11">Interface design</div>
+          <div class="text-12">Landing and product pages<br>Catalogs, filters, and search<br>Forms, calculators, configurators<br>Adaptive layouts, 320 to 1920px<br>Interaction and state design</div>
+        </div>
+      </div>
+      <div class="row-7">
+        <div class="row-10">
+          <div class="text-11">Design systems</div>
+          <div class="text-12">Color and type tokens<br>Component libraries with states<br>Spacing and grid systems<br>Icon sets<br>Handoff documentation</div>
+        </div>
+        <div class="row-10">
+          <div class="text-11">Tools</div>
+          <div class="text-12">Figma<br>Auto Layout and variables<br>Prototyping<br>Yandex.Metrica<br>Notion</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="about-me" class="text-5">
+      <div class="u-16">About me</div>
+
+      <div class="about-me-cols row-11">
+        <div class="row-12">
+          <div class="collage">
+            <img class="collage__photo" src="./assets/about-portrait.png" alt="Arseny">
+            <img class="sticker sticker--vscode" src="./assets/sticker-vscode.png" alt="">
+            <img class="sticker sticker--figma" src="./assets/sticker-figma.png" alt="">
+            <img class="sticker sticker--claude" src="./assets/sticker-claude.png" alt="">
+            <img class="sticker sticker--macbook" src="./assets/sticker-macbook.png" alt="">
+            <img class="sticker sticker--bike" src="./assets/sticker-bike.png" alt="">
+            <img class="sticker sticker--snowboard" src="./assets/sticker-snowboard.png" alt="">
+          </div>
+        </div>
+        <div class="row-13">
+          <div class="text-13">Arseny — product-minded designer with a developer's foundation</div>
+          <p class="text-14">I studied applied informatics, specializing in web and mobile app development, so I read a product from the structure outward — I understand how the thing is actually built. On top of that I hold a second diploma in product development and management, and took design coursework along the way. Design is where those three tracks meet.</p>
+          <p class="text-14">Four years in: two freelance, two as a designer at the IT company Rubix, across dozens of projects in different niches. I stay close to where design is moving — new tools, current patterns, and AI as part of the everyday workflow — and I keep sharpening it at conferences and in the community.</p>
+          <p class="hero-intro-copy">Outside of it, I keep an active life: the gym, cycling, skateboarding, snowboarding, and trekking. The same appetite for figuring out how something works, just with fewer screens.</p>
+
+          <div class="row-14">
+            <span class="tag--plain">Applied informatics</span>
+            <span class="tag--plain">Product management</span>
+            <span class="tag--plain">4 years</span>
+            <span class="tag--plain">AI-first workflow</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER -->
+    <section id="contact" ref="{{ setContactRef }}" class="text-15">
+      <div class="surface-1">
+        <div class="row-15">
+          <div class="row-16">
+            <h2 class="u-23">Let's talk</h2>
+            <p class="text-16">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
+            <div class="row-17">
+              <span class="text-17">arskondesign@gmail.com</span>
+              <button onClick="{{ copyEmail }}" class="surface-2">{{ copyLabel }}</button>
+            </div>
+          </div>
+          <div class="row-18">
+            <a href="#" class="text-18" style-hover="color: #FFFFFF;">Telegram</a>
+            <a href="#" class="text-18" style-hover="color: #FFFFFF;">LinkedIn</a>
+            <a href="#" class="text-18" style-hover="color: #FFFFFF;">Behance</a>
+          </div>
+        </div>
+
+        <div class="row-19">
+          <div class="row-20">
+            <div class="text-19">Arseny K.</div>
+            <div class="text-20">Product / UX designer<br>Last updated 2026</div>
+          </div>
+          <div class="row-20">
+            <div class="text-19">Work</div>
+            <div class="text-20">
+              <a href="./Interior Decor Case Study.dc.html" class="text-21" style-hover="color: #FFFFFF;">A store for 80,000 products</a>
+              <a href="./Dariela Case Study.dc.html" class="text-21" style-hover="color: #FFFFFF;">A platform for a food producer</a>
+              <a href="./IMPOS TRADE - v2.dc.html" class="text-21" style-hover="color: #FFFFFF;">A site that earns trust first</a>
+            </div>
+          </div>
+          <div class="row-20">
+            <div class="text-19">About</div>
+            <div class="text-20">
+              <a href="#about" class="text-21" style-hover="color: #FFFFFF;">Approach</a>
+              <a href="#about" class="text-21" style-hover="color: #FFFFFF;">What I do</a>
+              <a href="#about-me" class="text-21" style-hover="color: #FFFFFF;">About me</a>
+            </div>
+          </div>
+          <div class="row-20">
+            <div class="text-19">Contact</div>
+            <div class="text-20">
+              <a href="mailto:arskon777@gmail.com" class="text-21" style-hover="color: #FFFFFF;">Email</a>
+              <a href="#" class="text-21" style-hover="color: #FFFFFF;">Telegram</a>
+              <a href="#" class="text-21" style-hover="color: #FFFFFF;">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <div class="badge hero-badge-2" style-hover="transform: rotate(0deg);"><b class="u-5">80,000</b> products structured</div></main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { active: '', copied: false };
+
+  setWorkRef = (el) => { this.workEl = el; };
+  setAboutRef = (el) => { this.aboutEl = el; };
+  setContactRef = (el) => { this.contactEl = el; };
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const check = (el) => el && el.getBoundingClientRect().top <= 140 && el.getBoundingClientRect().bottom > 140;
+      let active = '';
+      if (check(this.workEl)) active = 'work';
+      if (check(this.aboutEl)) active = 'about';
+      if (check(this.contactEl)) active = 'contact';
+      if (active !== this.state.active) this.setState({ active });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+  }
+
+  copyEmail = () => {
+    navigator.clipboard && navigator.clipboard.writeText('arskon777@gmail.com').catch(() => {});
+    this.setState({ copied: true });
+    clearTimeout(this._copyTimer);
+    this._copyTimer = setTimeout(() => this.setState({ copied: false }), 2000);
+  };
+
+  renderVals() {
+    const a = this.state.active;
+    return {
+      navWorkActive: a === 'work',
+      navAboutActive: a === 'about',
+      navContactActive: a === 'contact',
+      navWorkColor: a === 'work' ? '#0D0D0D' : '#AAAAAA',
+      navAboutColor: a === 'about' ? '#0D0D0D' : '#AAAAAA',
+      navContactColor: a === 'contact' ? '#0D0D0D' : '#AAAAAA',
+      copyLabel: this.state.copied ? 'Copied ✓' : 'Copy email',
+      copyEmail: this.copyEmail,
+      setWorkRef: this.setWorkRef,
+      setAboutRef: this.setAboutRef,
+      setContactRef: this.setContactRef,
+    };
+  }
+}
+
+</script>
+</body>
+</html>

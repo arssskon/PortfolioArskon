@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="./support.js"></script>
 </head>
-<body>
+<body data-page="interior">
 <x-dc>
 
 <helmet>
@@ -17,15 +17,16 @@
 
 <div ref="{{ setRootRef }}" class="page page--interior">
 
-  <!-- NAV -->
-  <nav class="sticky-5">
-    <a href="#" class="text-22">← All work</a>
-    <div class="row-21">
-      <span class="text-49">Arseny S.</span>
-      <span class="row-22">
-        <span class="dot-2"></span>
-        Available for&nbsp;work
-      </span>
+  <nav class="nav-home">
+    <a href="index.html" class="nav-home__logo">Arseny K. <span class="nav-home__mark">✱</span></a>
+    <div class="nav-home__links">
+      <a href="index.html#work" class="nav-home__link" data-nav="work">Work<span class="nav-home__link-mark">✱</span></a>
+      <a href="index.html#about" class="nav-home__link" data-nav="about">About<span class="nav-home__link-mark">✱</span></a>
+      <a href="index.html#contact" class="nav-home__link" data-nav="contact">Contact<span class="nav-home__link-mark">✱</span></a>
+    </div>
+    <div class="nav-home__status">
+      <span class="live-dot"></span>
+      <span class="live-label">Available</span>
     </div>
   </nav>
 
@@ -398,19 +399,64 @@
     </section>
   </main>
 
-  <!-- 12 CONTACT -->
-  <section class="surface-12">
-    <div class="u-70">
-      <p class="text-65">Arseny K. — open to&nbsp;discussing details and&nbsp;approaches not covered in&nbsp;the&nbsp;case</p>
-      <a href="#" class="u-71">Telegram</a>
+  <nav class="case-switch">
+    <div class="case-switch__inner">
+      <a href="index.html#work" class="case-switch__link case-switch__link--prev">← All work</a>
+      <a href="dariela.html" class="case-switch__link case-switch__link--next">Next: Dariela →</a>
     </div>
-    <div class="u-72">
-      <a href="./Dariela Case Study.dc.html" class="text-66">Next case →</a>
+  </nav>
+
+  <section class="site-footer" id="contact">
+    <div class="site-footer__top">
+      <div>
+        <h2 class="site-footer__title">Let's talk</h2>
+        <p class="site-footer__blurb">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
+        <div class="site-footer__email-row">
+          <span class="site-footer__email">arskondesign@gmail.com</span>
+          <button type="button" class="site-footer__copy-btn" id="copy-email-btn">Copy email</button>
+        </div>
+      </div>
+      <div class="site-footer__social">
+        <a href="#" class="site-footer__social-link">Telegram</a>
+        <a href="#" class="site-footer__social-link">LinkedIn</a>
+        <a href="#" class="site-footer__social-link">Behance</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="site-footer__col">
+        <div class="site-footer__col-title">Arseny K.</div>
+        <div class="site-footer__col-body">Product / UX designer<br>Last updated 2026</div>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__col-title">Work</div>
+        <div class="site-footer__col-body">
+          <a href="interior-decor.html" class="site-footer__col-link">A store for 80,000 products</a>
+          <a href="dariela.html" class="site-footer__col-link">A platform for a food producer</a>
+          <a href="impos-trade.html" class="site-footer__col-link">A site that earns trust first</a>
+        </div>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__col-title">About</div>
+        <div class="site-footer__col-body">
+          <a href="index.html#about" class="site-footer__col-link">Approach</a>
+          <a href="index.html#about" class="site-footer__col-link">What I do</a>
+          <a href="index.html#about-me" class="site-footer__col-link">About me</a>
+        </div>
+      </div>
+      <div class="site-footer__col">
+        <div class="site-footer__col-title">Contact</div>
+        <div class="site-footer__col-body">
+          <a href="mailto:arskon777@gmail.com" class="site-footer__col-link">Email</a>
+          <a href="#" class="site-footer__col-link">Telegram</a>
+          <a href="#" class="site-footer__col-link">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </section>
 </div>
 
 </x-dc>
+<script src="./layout.js"></script>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   setRootRef = (el) => {

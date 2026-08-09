@@ -9,18 +9,30 @@
 // element lookups on every tick rather than caching references, so
 // neither depends on exactly when the DC framework finishes its work.
 (function () {
+  function copyEmailText() {
+    var lang = window.getLang ? window.getLang() : 'en';
+    var dict = window.I18N && window.I18N[lang];
+    return (dict && dict['common.footer.copyEmail']) || 'Copy email';
+  }
+
+  function copiedText() {
+    var lang = window.getLang ? window.getLang() : 'en';
+    var dict = window.I18N && window.I18N[lang];
+    return (dict && dict['common.footer.copied']) || 'Copied ✓';
+  }
+
   function wireClickDelegation() {
     document.addEventListener('click', function (e) {
       var btn = e.target.closest && e.target.closest('#copy-email-btn');
       if (!btn) return;
-      btn.textContent = 'Copied ✓';
+      btn.textContent = copiedText();
       try {
         if (navigator.clipboard) {
-          navigator.clipboard.writeText('arskon777@gmail.com').catch(function () {});
+          navigator.clipboard.writeText('arskondesign@gmail.com').catch(function () {});
         }
       } catch (err) {}
       clearTimeout(btn._copyTimer);
-      btn._copyTimer = setTimeout(function () { btn.textContent = 'Copy email'; }, 2000);
+      btn._copyTimer = setTimeout(function () { btn.textContent = copyEmailText(); }, 2000);
     });
   }
 

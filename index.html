@@ -17,15 +17,22 @@
 <div class="page">
 
   <nav class="nav-home">
-    <a href="index.html" class="nav-home__logo">Arseny K. <span class="nav-home__mark">✱</span></a>
-    <div class="nav-home__links">
-      <a href="#work" class="nav-home__link" data-nav="work">Work<span class="nav-home__link-mark">✱</span></a>
-      <a href="#about" class="nav-home__link" data-nav="about">About<span class="nav-home__link-mark">✱</span></a>
-      <a href="#contact" class="nav-home__link" data-nav="contact">Contact<span class="nav-home__link-mark">✱</span></a>
-    </div>
-    <div class="nav-home__status">
-      <span class="live-dot"></span>
-      <span class="live-label">Available</span>
+    <div class="nav-home__inner container-wide">
+      <a href="index.html" class="nav-home__logo">Arseniy K. <span class="nav-home__mark">✱</span></a>
+      <div class="nav-home__links">
+        <a href="#work" class="nav-home__link" data-nav="work" data-i18n="common.nav.work">Work<span class="nav-home__link-mark">✱</span></a>
+        <a href="#about" class="nav-home__link" data-nav="about" data-i18n="common.nav.about">About<span class="nav-home__link-mark">✱</span></a>
+        <a href="#contact" class="nav-home__link" data-nav="contact" data-i18n="common.nav.contact">Contact<span class="nav-home__link-mark">✱</span></a>
+      </div>
+      <div class="nav-home__status">
+        <div class="lang-toggle" data-lang-toggle>
+          <button type="button" class="lang-toggle__btn" data-lang-btn="ru">RU</button>
+          <span class="lang-toggle__sep">/</span>
+          <button type="button" class="lang-toggle__btn" data-lang-btn="en">EN</button>
+        </div>
+        <span class="live-dot"></span>
+        <span class="live-label" data-i18n="common.status.available">Available</span>
+      </div>
     </div>
   </nav>
 
@@ -36,10 +43,10 @@
 
     <!-- WORK -->
     <section id="hero" class="u-2">
-      <div class="label-1">Hello — I'm Arseny, a product / UX designer</div>
+      <div class="label-1" data-i18n="home.hero.kicker">Hello — I'm Arseniy, a product / UX designer</div>
 
       <div class="hero-headline pos-2">
-        <h1 class="hero-h1 heading-1">
+        <h1 class="hero-h1 heading-1" data-i18n-html="home.hero.headline">
           <span>PLATFORMS</span> <span class="u-3">built from</span> <span>STRUCTURE</span><br class="hero-break">
           <span class="u-3">to</span> <span>INTERFACE</span> <span class="u-3">for</span> <span class="u-4">E-COMMERCE,</span><br class="hero-break">
           <span>MANUFACTURING</span> <span class="u-3">&amp;</span> <span>FOREIGN TRADE</span>
@@ -50,13 +57,13 @@
 
 
 
-      <div class="badge hero-badge-1" style-hover="transform: rotate(0deg);"><b class="u-5">Structure</b> first</div></div>
+      <div class="badge hero-badge-1" style-hover="transform: rotate(0deg);" data-i18n-html="home.hero.badgeStructure"><b class="u-5">Structure</b> first</div></div>
 
-      <p class="text-4">I take projects end to end — research, information architecture, design systems, and interfaces across every breakpoint. Most sites I inherit aren't broken visually. They're unlabeled, unranked, and routed to no one in particular.</p>
+      <p class="text-4" data-i18n="home.hero.intro">I take projects end to end — research, information architecture, design systems, and interfaces across every breakpoint. Most sites I inherit aren't broken visually. They're unlabeled, unranked, and routed to no one in particular.</p>
 
-      <a href="#work" class="u-6">Selected work <span class="u-7" style-hover="transform: translateY(3px);">↓</span></a>
-    <div class="badge hero-badge-3" style-hover="transform: rotate(0deg);"><b class="u-5">320 → 1920</b> breakpoints</div></section><section id="work" class="text-5">
-      <div class="u-8">Work</div>
+      <a href="#work" class="u-6" data-i18n-html="home.hero.selectedWork">Selected work <span class="u-7" style-hover="transform: translateY(3px);">↓</span></a>
+    <div class="badge hero-badge-3" style-hover="transform: rotate(0deg);" data-i18n-html="home.hero.badgeBreakpoints"><b class="u-5">320 → 1920</b> breakpoints</div></section><section id="work" class="text-5">
+      <div class="u-8" data-i18n="common.nav.work">Work</div>
 
       <div class="row-3">
         <a href="interior-decor.html" class="u-9">
@@ -75,9 +82,9 @@
               <span class="item-index item-index--lg">01</span>
               <span class="text-7" style-hover="color: #9C57BD; transform: translate(3px, -3px);">↗</span>
             </div>
-            <p class="text-8"><span class="u-13">A store for 80,000 products</span> — where retail shoppers and wholesale partners needed the same catalog to behave differently.</p>
+            <p class="text-8" data-i18n-html="home.work.interior.desc"><span class="u-13">A store for 80,000 products</span> — where retail shoppers and wholesale partners needed the same catalog to behave differently.</p>
             <div class="u-14">E-commerce, Design system, B2B / B2C</div>
-            <div class="text-9">→ 80,000+ products structured across 3 breakpoints</div>
+            <div class="text-9" data-i18n="home.work.interior.result">→ 80,000+ products structured across 3 breakpoints</div>
           </div>
         </a>
       </div>
@@ -99,9 +106,9 @@
               <span class="item-index item-index--lg">02</span>
               <span class="text-7" style-hover="color: #9C57BD; transform: translate(3px, -3px);">↗</span>
             </div>
-            <p class="text-8"><span class="u-13">A platform for a food producer</span> — three brochure pages rebuilt into parallel retail and wholesale streams.</p>
+            <p class="text-8" data-i18n-html="home.work.dariela.desc"><span class="u-13">A platform for a food producer</span> — three brochure pages rebuilt into parallel retail and wholesale streams.</p>
             <div class="u-14">Redesign, E-commerce, Design system</div>
-            <div class="text-9">→ 3 → 10+ page types, design system built from zero</div>
+            <div class="text-9" data-i18n="home.work.dariela.result">→ 3 → 10+ page types, design system built from zero</div>
           </div>
         </a>
       </div>
@@ -123,9 +130,9 @@
               <span class="item-index item-index--lg">03</span>
               <span class="text-7" style-hover="color: #9C57BD; transform: translate(3px, -3px);">↗</span>
             </div>
-            <p class="text-8"><span class="u-13">A site that had to earn trust first</span> — customs and logistics, where clients hand over large sums and legal liability before the first call.</p>
+            <p class="text-8" data-i18n-html="home.work.impos.desc"><span class="u-13">A site that had to earn trust first</span> — customs and logistics, where clients hand over large sums and legal liability before the first call.</p>
             <div class="u-14">B2B, Dark theme, 13 page types, RU/CN architecture</div>
-            <div class="text-9">→ 40+ service landings across 5 breakpoints</div>
+            <div class="text-9" data-i18n="home.work.impos.result">→ 40+ service landings across 5 breakpoints</div>
           </div>
         </a>
       </div>
@@ -133,49 +140,49 @@
 
     <!-- ABOUT -->
     <section id="about" class="text-5">
-      <div class="u-16">About</div>
+      <div class="u-16" data-i18n="common.nav.about">About</div>
 
       <div class="row-7">
         <div class="row-8">
-          <p class="text-10">Most projects arrive with the same problem. The content exists, the services exist, the proof exists — but nothing is labeled, ranked, or routed to the right visitor. The visual layer is rarely what's broken.</p>
-          <p class="hero-intro-copy">So I start with the architecture: who is arriving, what they need to see first, and what has to be true before they act. Colors, type, and components come after.</p>
+          <p class="text-10" data-i18n="home.about.col1.p1">Most projects arrive with the same problem. The content exists, the services exist, the proof exists — but nothing is labeled, ranked, or routed to the right visitor. The visual layer is rarely what's broken.</p>
+          <p class="hero-intro-copy" data-i18n="home.about.col1.p2">So I start with the architecture: who is arriving, what they need to see first, and what has to be true before they act. Colors, type, and components come after.</p>
         </div>
         <div class="row-8">
-          <p class="text-10">Every project here went through that sequence, and every design system on this page was built from zero rather than assembled from a kit — tokens, component states, spacing scales, icon sets, handoff documentation.</p>
-          <p class="hero-intro-copy">Recent work spans an 80,000-product e-commerce catalog, a food manufacturer's B2B and B2C platform, and a foreign-trade company with 40+ service landings.</p>
+          <p class="text-10" data-i18n="home.about.col2.p1">Every project here went through that sequence, and every design system on this page was built from zero rather than assembled from a kit — tokens, component states, spacing scales, icon sets, handoff documentation.</p>
+          <p class="hero-intro-copy" data-i18n="home.about.col2.p2">Recent work spans an 80,000-product e-commerce catalog, a food manufacturer's B2B and B2C platform, and a foreign-trade company with 40+ service landings.</p>
         </div>
       </div>
 
       <div class="row-9">
         <div class="row-10">
-          <div class="text-11">Research &amp; architecture</div>
-          <div class="text-12">Competitor and market analysis<br>User and business goal mapping<br>Information architecture<br>Navigation and mega-menu structure<br>Content inventory and labeling</div>
+          <div class="text-11" data-i18n="home.about.skill1.title">Research &amp; architecture</div>
+          <div class="text-12" data-i18n-html="home.about.skill1.body">Competitor and market analysis<br>User and business goal mapping<br>Information architecture<br>Navigation and mega-menu structure<br>Content inventory and labeling</div>
         </div>
         <div class="row-10">
-          <div class="text-11">Interface design</div>
-          <div class="text-12">Landing and product pages<br>Catalogs, filters, and search<br>Forms, calculators, configurators<br>Adaptive layouts, 320 to 1920px<br>Interaction and state design</div>
+          <div class="text-11" data-i18n="home.about.skill2.title">Interface design</div>
+          <div class="text-12" data-i18n-html="home.about.skill2.body">Landing and product pages<br>Catalogs, filters, and search<br>Forms, calculators, configurators<br>Adaptive layouts, 320 to 1920px<br>Interaction and state design</div>
         </div>
       </div>
       <div class="row-7">
         <div class="row-10">
-          <div class="text-11">Design systems</div>
-          <div class="text-12">Color and type tokens<br>Component libraries with states<br>Spacing and grid systems<br>Icon sets<br>Handoff documentation</div>
+          <div class="text-11" data-i18n="home.about.skill3.title">Design systems</div>
+          <div class="text-12" data-i18n-html="home.about.skill3.body">Color and type tokens<br>Component libraries with states<br>Spacing and grid systems<br>Icon sets<br>Handoff documentation</div>
         </div>
         <div class="row-10">
-          <div class="text-11">Tools</div>
-          <div class="text-12">Figma<br>Auto Layout and variables<br>Prototyping<br>Yandex.Metrica<br>Notion</div>
+          <div class="text-11" data-i18n="home.about.skill4.title">Tools</div>
+          <div class="text-12" data-i18n-html="home.about.skill4.body">Figma<br>Auto Layout and variables<br>Prototyping<br>Yandex.Metrica<br>Notion</div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT ME -->
     <section id="about-me" class="text-5">
-      <div class="u-16">About me</div>
+      <div class="u-16" data-i18n="common.footer.about.aboutMe">About me</div>
 
       <div class="about-me-cols row-11">
         <div class="row-12">
           <div class="collage">
-            <img class="collage__photo" src="./assets/about-portrait.png" alt="Arseny">
+            <img class="collage__photo" src="./assets/about-portrait.png" alt="Arseniy">
             <img class="sticker sticker--vscode" src="./assets/sticker-vscode.png" alt="">
             <img class="sticker sticker--figma" src="./assets/sticker-figma.png" alt="">
             <img class="sticker sticker--claude" src="./assets/sticker-claude.png" alt="">
@@ -185,66 +192,63 @@
           </div>
         </div>
         <div class="row-13">
-          <div class="text-13">Arseny — product-minded designer with a developer's foundation</div>
-          <p class="text-14">I studied applied informatics, specializing in web and mobile app development, so I read a product from the structure outward — I understand how the thing is actually built. On top of that I hold a second diploma in product development and management, and took design coursework along the way. Design is where those three tracks meet.</p>
-          <p class="text-14">Four years in: two freelance, two as a designer at the IT company Rubix, across dozens of projects in different niches. I stay close to where design is moving — new tools, current patterns, and AI as part of the everyday workflow — and I keep sharpening it at conferences and in the community.</p>
-          <p class="hero-intro-copy">Outside of it, I keep an active life: the gym, cycling, skateboarding, snowboarding, and trekking. The same appetite for figuring out how something works, just with fewer screens.</p>
+          <div class="text-13" data-i18n="home.aboutMe.title">Arseniy — product-minded designer with a developer's foundation</div>
+          <p class="text-14" data-i18n="home.aboutMe.p1">I studied applied informatics, specializing in web and mobile app development, so I read a product from the structure outward — I understand how the thing is actually built. On top of that I hold a second diploma in product development and management, and took design coursework along the way. Design is where those three tracks meet.</p>
+          <p class="text-14" data-i18n="home.aboutMe.p2">Four years in: two freelance, two as a designer at the IT company Rubix, across dozens of projects in different niches. I stay close to where design is moving — new tools, current patterns, and AI as part of the everyday workflow — and I keep sharpening it at conferences and in the community.</p>
+          <p class="hero-intro-copy" data-i18n="home.aboutMe.p3">Outside of it, I keep an active life: the gym, cycling, skateboarding, snowboarding, and trekking. The same appetite for figuring out how something works, just with fewer screens.</p>
 
           <div class="row-14">
-            <span class="tag--plain">Applied informatics</span>
-            <span class="tag--plain">Product management</span>
-            <span class="tag--plain">4 years</span>
-            <span class="tag--plain">AI-first workflow</span>
+            <span class="tag--plain" data-i18n="home.aboutMe.tag1">Applied informatics</span>
+            <span class="tag--plain" data-i18n="home.aboutMe.tag2">Product management</span>
+            <span class="tag--plain" data-i18n="home.aboutMe.tag3">4 years</span>
+            <span class="tag--plain" data-i18n="home.aboutMe.tag4">AI-first workflow</span>
           </div>
         </div>
       </div>
     </section>
 
-  <div class="badge hero-badge-2" style-hover="transform: rotate(0deg);"><b class="u-5">80,000</b> products structured</div></main>
+  <div class="badge hero-badge-2" style-hover="transform: rotate(0deg);" data-i18n-html="home.hero.badgeProducts"><b class="u-5">80,000</b> products structured</div></main>
 
   <section class="site-footer" id="contact">
     <div class="site-footer__top">
       <div>
-        <h2 class="site-footer__title">Let's talk</h2>
-        <p class="site-footer__blurb">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
+        <h2 class="site-footer__title" data-i18n="common.footer.title">Let's talk</h2>
+        <p class="site-footer__blurb" data-i18n="common.footer.blurb">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
         <div class="site-footer__email-row">
           <span class="site-footer__email">arskondesign@gmail.com</span>
-          <button type="button" class="site-footer__copy-btn" id="copy-email-btn">Copy email</button>
+          <button type="button" class="site-footer__copy-btn" id="copy-email-btn" data-i18n="common.footer.copyEmail">Copy email</button>
         </div>
       </div>
       <div class="site-footer__social">
-        <a href="#" class="site-footer__social-link">Telegram</a>
-        <a href="#" class="site-footer__social-link">LinkedIn</a>
-        <a href="#" class="site-footer__social-link">Behance</a>
+        <a href="https://t.me/ArskonDesign" target="_blank" rel="noopener noreferrer" class="site-footer__social-link">Telegram</a>
       </div>
     </div>
     <div class="site-footer__bottom">
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Arseny K.</div>
-        <div class="site-footer__col-body">Product / UX designer<br>Last updated 2026</div>
+        <div class="site-footer__col-title">Arseniy K.</div>
+        <div class="site-footer__col-body" data-i18n-html="common.footer.roleUpdated">Product / UX designer<br>Last updated 2026</div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Work</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.work">Work</div>
         <div class="site-footer__col-body">
-          <a href="interior-decor.html" class="site-footer__col-link">A store for 80,000 products</a>
-          <a href="dariela.html" class="site-footer__col-link">A platform for a food producer</a>
-          <a href="impos-trade.html" class="site-footer__col-link">A site that earns trust first</a>
+          <a href="interior-decor.html" class="site-footer__col-link" data-i18n="common.footer.work.interior">A store for 80,000 products</a>
+          <a href="dariela.html" class="site-footer__col-link" data-i18n="common.footer.work.dariela">A platform for a food producer</a>
+          <a href="impos-trade.html" class="site-footer__col-link" data-i18n="common.footer.work.impos">A site that earns trust first</a>
         </div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">About</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.about">About</div>
         <div class="site-footer__col-body">
-          <a href="#about" class="site-footer__col-link">Approach</a>
-          <a href="#about" class="site-footer__col-link">What I do</a>
-          <a href="#about-me" class="site-footer__col-link">About me</a>
+          <a href="#about" class="site-footer__col-link" data-i18n="common.footer.about.approach">Approach</a>
+          <a href="#about" class="site-footer__col-link" data-i18n="common.footer.about.whatIdo">What I do</a>
+          <a href="#about-me" class="site-footer__col-link" data-i18n="common.footer.about.aboutMe">About me</a>
         </div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Contact</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.contact">Contact</div>
         <div class="site-footer__col-body">
-          <a href="mailto:arskon777@gmail.com" class="site-footer__col-link">Email</a>
-          <a href="#" class="site-footer__col-link">Telegram</a>
-          <a href="#" class="site-footer__col-link">LinkedIn</a>
+          <a href="mailto:arskondesign@gmail.com" class="site-footer__col-link" data-i18n="common.footer.contact.email">Email</a>
+          <a href="https://t.me/ArskonDesign" target="_blank" rel="noopener noreferrer" class="site-footer__col-link">Telegram</a>
         </div>
       </div>
     </div>
@@ -253,5 +257,6 @@
 
 </x-dc>
 <script src="./layout.js"></script>
+<script src="./i18n.js"></script>
 </body>
 </html>

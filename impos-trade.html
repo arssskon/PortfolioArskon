@@ -17,15 +17,22 @@
 <div ref="{{ setRootRef }}" class="page">
 
   <nav class="nav-home">
-    <a href="index.html" class="nav-home__logo">Arseny K. <span class="nav-home__mark">✱</span></a>
-    <div class="nav-home__links">
-      <a href="index.html#work" class="nav-home__link" data-nav="work">Work<span class="nav-home__link-mark">✱</span></a>
-      <a href="index.html#about" class="nav-home__link" data-nav="about">About<span class="nav-home__link-mark">✱</span></a>
-      <a href="index.html#contact" class="nav-home__link" data-nav="contact">Contact<span class="nav-home__link-mark">✱</span></a>
-    </div>
-    <div class="nav-home__status">
-      <span class="live-dot"></span>
-      <span class="live-label">Available</span>
+    <div class="nav-home__inner container-wide">
+      <a href="index.html" class="nav-home__logo">Arseniy K. <span class="nav-home__mark">✱</span></a>
+      <div class="nav-home__links">
+        <a href="index.html#work" class="nav-home__link" data-nav="work" data-i18n="common.nav.work">Work<span class="nav-home__link-mark">✱</span></a>
+        <a href="index.html#about" class="nav-home__link" data-nav="about" data-i18n="common.nav.about">About<span class="nav-home__link-mark">✱</span></a>
+        <a href="index.html#contact" class="nav-home__link" data-nav="contact" data-i18n="common.nav.contact">Contact<span class="nav-home__link-mark">✱</span></a>
+      </div>
+      <div class="nav-home__status">
+        <div class="lang-toggle" data-lang-toggle>
+          <button type="button" class="lang-toggle__btn" data-lang-btn="ru">RU</button>
+          <span class="lang-toggle__sep">/</span>
+          <button type="button" class="lang-toggle__btn" data-lang-btn="en">EN</button>
+        </div>
+        <span class="live-dot"></span>
+        <span class="live-label" data-i18n="common.status.available">Available</span>
+      </div>
     </div>
   </nav>
 
@@ -34,34 +41,34 @@
     <!-- 01 HERO -->
     <section class="u-25">
       <div class="u-26">03</div>
-      <h1 class="heading-2">
+      <h1 class="heading-2" data-i18n-html="impos.hero.title">
         IMPOS TRADE — FEA Outsourcing: Website Design &amp; Platform
       </h1>
       <div class="row-23">
         <span class="label-2">B2B</span>
-        <span class="label-2">Dark theme</span>
-        <span class="label-2">RU/CN Architecture</span>
-        <span class="label-2">5 breakpoints</span>
-        <span class="label-2">13 page types</span>
-        <span class="label-2">40+ service pages</span>
+        <span class="label-2" data-i18n="impos.hero.tag.darkTheme">Dark theme</span>
+        <span class="label-2" data-i18n="impos.hero.tag.arch">RU/CN Architecture</span>
+        <span class="label-2" data-i18n="impos.hero.tag.breakpoints">5 breakpoints</span>
+        <span class="label-2" data-i18n="impos.hero.tag.pageTypes">13 page types</span>
+        <span class="label-2" data-i18n="impos.hero.tag.servicePages">40+ service pages</span>
       </div>
 
       <div class="grid-1">
         <div class="surface-3">
           <div class="heading-3">2013</div>
-          <div class="text-24">year founded — 12 years in&nbsp;foreign trade</div>
+          <div class="text-24" data-i18n-html="impos.hero.stat1">year founded — 12 years in&nbsp;foreign trade</div>
         </div>
         <div class="surface-3">
           <div class="heading-3">13</div>
-          <div class="text-24">page types designed from&nbsp;scratch</div>
+          <div class="text-24" data-i18n-html="impos.hero.stat2">page types designed from&nbsp;scratch</div>
         </div>
         <div class="surface-3">
           <div class="heading-3">40+</div>
-          <div class="text-24">individual service landing pages</div>
+          <div class="text-24" data-i18n="impos.hero.stat3">individual service landing pages</div>
         </div>
         <div class="surface-3">
           <div class="heading-3">5</div>
-          <div class="text-24">responsive breakpoints — 320 to&nbsp;1920px</div>
+          <div class="text-24" data-i18n-html="impos.hero.stat4">responsive breakpoints — 320 to&nbsp;1920px</div>
         </div>
       </div>
     </section>
@@ -78,52 +85,52 @@
           </div>
           <img src="uploads/Homepage - dark theme, teal accent, full‑cycle FEA outsourcing-abb3a51f.png" alt="Homepage screenshot — dark theme, teal accent" class="mockup__img">
         </div>
-        <div class="caption">Homepage — dark theme, teal accent, full‑cycle FEA outsourcing</div>
+        <div class="caption" data-i18n="impos.caption.homepage">Homepage — dark theme, teal accent, full‑cycle FEA outsourcing</div>
       </div>
 
       <div class="u-36">
         <div>
-          <div class="label-3">02 — Context &amp; Task</div>
-          <h2 class="reveal heading-4">A&nbsp;customs and&nbsp;logistics company that&nbsp;had to&nbsp;earn trust before a&nbsp;single call</h2>
-          <p class="reveal text-26">IMPOS TRADE (OOO, ИНН 7430017168) has operated since 2013 from&nbsp;Chelyabinsk offering full‑cycle foreign trade outsourcing: import and&nbsp;export under contract, customs clearance, international logistics, documentation, certification, and&nbsp;cargo insurance. Clients range from&nbsp;small e‑commerce importers to&nbsp;mid‑size manufacturers sourcing equipment from&nbsp;China, India, and&nbsp;Turkey.</p>
-          <p class="reveal text-26">In&nbsp;B2B customs and&nbsp;logistics, clients hand over large sums, foreign contracts, and&nbsp;legal responsibility to&nbsp;a&nbsp;third party. The&nbsp;website had to&nbsp;communicate expertise and&nbsp;transparency before a&nbsp;single conversation starts — and&nbsp;it&nbsp;had to&nbsp;do&nbsp;it&nbsp;in&nbsp;two languages simultaneously.</p>
+          <div class="label-3" data-i18n="impos.s02.label">02 — Context &amp; Task</div>
+          <h2 class="reveal heading-4" data-i18n-html="impos.s02.title">A&nbsp;customs and&nbsp;logistics company that&nbsp;had to&nbsp;earn trust before a&nbsp;single call</h2>
+          <p class="reveal text-26" data-i18n-html="impos.s02.p1">IMPOS TRADE (OOO, ИНН 7430017168) has operated since 2013 from&nbsp;Chelyabinsk offering full‑cycle foreign trade outsourcing: import and&nbsp;export under contract, customs clearance, international logistics, documentation, certification, and&nbsp;cargo insurance. Clients range from&nbsp;small e‑commerce importers to&nbsp;mid‑size manufacturers sourcing equipment from&nbsp;China, India, and&nbsp;Turkey.</p>
+          <p class="reveal text-26" data-i18n-html="impos.s02.p2">In&nbsp;B2B customs and&nbsp;logistics, clients hand over large sums, foreign contracts, and&nbsp;legal responsibility to&nbsp;a&nbsp;third party. The&nbsp;website had to&nbsp;communicate expertise and&nbsp;transparency before a&nbsp;single conversation starts — and&nbsp;it&nbsp;had to&nbsp;do&nbsp;it&nbsp;in&nbsp;two languages simultaneously.</p>
           <div class="reveal row-24">
-            <span class="text-27">Import · Export · Customs</span>
-            <span class="text-27">China · India · Turkey</span>
-            <span class="text-27">RU/CN architecture</span>
-            <span class="text-27">12 years in&nbsp;FEA</span>
+            <span class="text-27" data-i18n="impos.s02.tag1">Import · Export · Customs</span>
+            <span class="text-27" data-i18n="impos.s02.tag2">China · India · Turkey</span>
+            <span class="text-27" data-i18n="impos.s02.tag3">RU/CN architecture</span>
+            <span class="text-27" data-i18n-html="impos.s02.tag4">12 years in&nbsp;FEA</span>
           </div>
         </div>
 
         <div class="u-29">
-          <div class="label-4">02.1 — Client</div>
-          <h3 class="reveal heading-5">Eight services. Two&nbsp;languages. One website with&nbsp;no&nbsp;clear entry point.</h3>
-          <p class="reveal body-copy body-copy--sm">The&nbsp;company offered 8&nbsp;distinct service types — each for&nbsp;a&nbsp;different client with&nbsp;a&nbsp;different intent and&nbsp;risk profile. Import clients need a&nbsp;customs calculator and&nbsp;route options. Export clients need contract documentation. A&nbsp;first‑time importer needs an&nbsp;FAQ and&nbsp;step‑by‑step guide. The&nbsp;previous flat structure gave all of&nbsp;them the&nbsp;same undifferentiated page.</p>
+          <div class="label-4" data-i18n="impos.s021.label">02.1 — Client</div>
+          <h3 class="reveal heading-5" data-i18n-html="impos.s021.title">Eight services. Two&nbsp;languages. One website with&nbsp;no&nbsp;clear entry point.</h3>
+          <p class="reveal body-copy body-copy--sm" data-i18n-html="impos.s021.body">The&nbsp;company offered 8&nbsp;distinct service types — each for&nbsp;a&nbsp;different client with&nbsp;a&nbsp;different intent and&nbsp;risk profile. Import clients need a&nbsp;customs calculator and&nbsp;route options. Export clients need contract documentation. A&nbsp;first‑time importer needs an&nbsp;FAQ and&nbsp;step‑by‑step guide. The&nbsp;previous flat structure gave all of&nbsp;them the&nbsp;same undifferentiated page.</p>
         </div>
 
         <div class="u-29">
-          <div class="label-10">02.2 — Problem</div>
-          <h2 class="reveal heading-7">Proof existed — scattered. Services existed — unlabeled.</h2>
+          <div class="label-10" data-i18n="impos.s022.label">02.2 — Problem</div>
+          <h2 class="reveal heading-7" data-i18n-html="impos.s022.title">Proof existed — scattered. Services existed — unlabeled.</h2>
           <div class="reveal-group grid-6">
-            <div class="reveal surface-4"><span class="item-index">01</span><p class="item-body">8&nbsp;service types with&nbsp;no&nbsp;hierarchy — import, export, customs, logistics, certification, insurance, documentation, consulting listed flat with&nbsp;no&nbsp;separation by&nbsp;client type</p></div>
-            <div class="reveal surface-4"><span class="item-index">02</span><p class="item-body">Real proof existed but&nbsp;was scattered — hundreds of&nbsp;reviews, official gratitude letters from&nbsp;major companies, audio and&nbsp;video testimonials, and&nbsp;12+ published case studies with&nbsp;real financial outcomes</p></div>
+            <div class="reveal surface-4"><span class="item-index">01</span><p class="item-body" data-i18n-html="impos.s022.item1">8&nbsp;service types with&nbsp;no&nbsp;hierarchy — import, export, customs, logistics, certification, insurance, documentation, consulting listed flat with&nbsp;no&nbsp;separation by&nbsp;client type</p></div>
+            <div class="reveal surface-4"><span class="item-index">02</span><p class="item-body" data-i18n-html="impos.s022.item2">Real proof existed but&nbsp;was scattered — hundreds of&nbsp;reviews, official gratitude letters from&nbsp;major companies, audio and&nbsp;video testimonials, and&nbsp;12+ published case studies with&nbsp;real financial outcomes</p></div>
           </div>
-          <p class="reveal body-copy--quiet">The&nbsp;company's strongest asset — documented, real proof of&nbsp;results — was invisible to&nbsp;first‑time visitors.</p>
+          <p class="reveal body-copy--quiet" data-i18n-html="impos.s022.summary">The&nbsp;company's strongest asset — documented, real proof of&nbsp;results — was invisible to&nbsp;first‑time visitors.</p>
         </div>
 
         <div class="u-29">
-          <div class="label-5">02.3 — Scope</div>
-          <h2 class="reveal heading-7">13 page types. 5&nbsp;breakpoints. 2&nbsp;languages. Built from&nbsp;zero.</h2>
+          <div class="label-5" data-i18n="impos.s023.label">02.3 — Scope</div>
+          <h2 class="reveal heading-7" data-i18n-html="impos.s023.title">13 page types. 5&nbsp;breakpoints. 2&nbsp;languages. Built from&nbsp;zero.</h2>
           <div class="reveal-group grid-7">
-            <div class="reveal surface-4"><span class="item-index">01</span><p class="item-body">Homepage — 15+ sections covering the&nbsp;full service range, hero, tariffs, social proof</p></div>
-            <div class="reveal surface-4"><span class="item-index">02</span><p class="item-body">Service pages — individual landing for&nbsp;each of&nbsp;8&nbsp;service types with&nbsp;dedicated content</p></div>
-            <div class="reveal surface-4"><span class="item-index">03</span><p class="item-body">Cases — filterable grid with&nbsp;route data, problem statements, and&nbsp;case outcomes</p></div>
-            <div class="reveal surface-4"><span class="item-index">04</span><p class="item-body">Reviews — 4&nbsp;separate formats: messenger screenshots, official letters, audio, video</p></div>
-            <div class="reveal surface-4"><span class="item-index">05</span><p class="item-body">News + Articles — content sections with&nbsp;category filters and&nbsp;pagination</p></div>
-            <div class="reveal surface-4"><span class="item-index">06</span><p class="item-body">FAQ — category‑filtered accordion covering 8&nbsp;topic clusters</p></div>
-            <div class="reveal surface-4"><span class="item-index">07</span><p class="item-body">Vacancies — team presentation, job listings, resume upload form</p></div>
-            <div class="reveal surface-4"><span class="item-index">08</span><p class="item-body">Delivery calculator — country, route, and&nbsp;city selectors, designed and&nbsp;specified</p></div>
-            <div class="reveal surface-8"><span class="item-index">09</span><p class="item-body">404 + Design system — branded error page and&nbsp;full component library</p></div>
+            <div class="reveal surface-4"><span class="item-index">01</span><p class="item-body" data-i18n-html="impos.s023.item1">Homepage — 15+ sections covering the&nbsp;full service range, hero, tariffs, social proof</p></div>
+            <div class="reveal surface-4"><span class="item-index">02</span><p class="item-body" data-i18n-html="impos.s023.item2">Service pages — individual landing for&nbsp;each of&nbsp;8&nbsp;service types with&nbsp;dedicated content</p></div>
+            <div class="reveal surface-4"><span class="item-index">03</span><p class="item-body" data-i18n-html="impos.s023.item3">Cases — filterable grid with&nbsp;route data, problem statements, and&nbsp;case outcomes</p></div>
+            <div class="reveal surface-4"><span class="item-index">04</span><p class="item-body" data-i18n-html="impos.s023.item4">Reviews — 4&nbsp;separate formats: messenger screenshots, official letters, audio, video</p></div>
+            <div class="reveal surface-4"><span class="item-index">05</span><p class="item-body" data-i18n-html="impos.s023.item5">News + Articles — content sections with&nbsp;category filters and&nbsp;pagination</p></div>
+            <div class="reveal surface-4"><span class="item-index">06</span><p class="item-body" data-i18n-html="impos.s023.item6">FAQ — category‑filtered accordion covering 8&nbsp;topic clusters</p></div>
+            <div class="reveal surface-4"><span class="item-index">07</span><p class="item-body" data-i18n="impos.s023.item7">Vacancies — team presentation, job listings, resume upload form</p></div>
+            <div class="reveal surface-4"><span class="item-index">08</span><p class="item-body" data-i18n-html="impos.s023.item8">Delivery calculator — country, route, and&nbsp;city selectors, designed and&nbsp;specified</p></div>
+            <div class="reveal surface-8"><span class="item-index">09</span><p class="item-body" data-i18n-html="impos.s023.item9">404 + Design system — branded error page and&nbsp;full component library</p></div>
           </div>
         </div>
       </div>
@@ -132,16 +139,16 @@
 
     <!-- 03 IA -->
     <section class="text-28">
-      <div class="label-5">03 — Process / Information Architecture</div>
-      <h2 class="reveal heading-8">Navigation rebuilt around service type and&nbsp;client intent</h2>
+      <div class="label-5" data-i18n="impos.s03.label">03 — Process / Information Architecture</div>
+      <h2 class="reveal heading-8" data-i18n-html="impos.s03.title">Navigation rebuilt around service type and&nbsp;client intent</h2>
       <div class="row-25">
         <div class="row-13">
-          <div class="label-6">Problem</div>
-          <p class="body-copy">The&nbsp;original structure listed all 8&nbsp;services flat with&nbsp;no&nbsp;hierarchy. Import and&nbsp;export clients, customs clients, and&nbsp;China‑specific clients all landed on&nbsp;the&nbsp;same pages. The&nbsp;mega‑menu had no&nbsp;geographic grouping and&nbsp;no&nbsp;separation between service types and&nbsp;destination‑specific services.</p>
+          <div class="label-6" data-i18n="impos.s03.problem">Problem</div>
+          <p class="body-copy" data-i18n-html="impos.s03.problemText">The&nbsp;original structure listed all 8&nbsp;services flat with&nbsp;no&nbsp;hierarchy. Import and&nbsp;export clients, customs clients, and&nbsp;China‑specific clients all landed on&nbsp;the&nbsp;same pages. The&nbsp;mega‑menu had no&nbsp;geographic grouping and&nbsp;no&nbsp;separation between service types and&nbsp;destination‑specific services.</p>
         </div>
         <div class="row-13">
-          <div class="label-6">Solution</div>
-          <p class="body-copy">Main navigation anchors five primary sections. Services expand to&nbsp;a&nbsp;mega‑menu with&nbsp;two sub‑tiers: by&nbsp;service type (import, export, FEA outsourcing, logistics, certification) and&nbsp;by&nbsp;geography (China‑specific services in&nbsp;a&nbsp;dedicated group). Content types — Cases, Reviews, News, Articles — each got standalone sections with&nbsp;filtering and&nbsp;pagination.</p>
+          <div class="label-6" data-i18n="impos.s03.solution">Solution</div>
+          <p class="body-copy" data-i18n-html="impos.s03.solutionText">Main navigation anchors five primary sections. Services expand to&nbsp;a&nbsp;mega‑menu with&nbsp;two sub‑tiers: by&nbsp;service type (import, export, FEA outsourcing, logistics, certification) and&nbsp;by&nbsp;geography (China‑specific services in&nbsp;a&nbsp;dedicated group). Content types — Cases, Reviews, News, Articles — each got standalone sections with&nbsp;filtering and&nbsp;pagination.</p>
         </div>
       </div>
       <div class="card-2">
@@ -152,14 +159,14 @@
         </div>
         <img src="uploads/Navigation - mega‑menu with service type and geography sub‑tiers-04a2b2b9.png" alt="Navigation / mega-menu screenshot" class="mockup__img">
       </div>
-      <div class="caption">Navigation — mega‑menu with&nbsp;service type and&nbsp;geography sub‑tiers</div>
+      <div class="caption" data-i18n-html="impos.s03.caption">Navigation — mega‑menu with&nbsp;service type and&nbsp;geography sub‑tiers</div>
     </section>
 
     <!-- 04 DESIGN SYSTEM -->
     <section class="text-28">
-      <div class="label-5">04 — Process / Design System</div>
-      <h2 class="reveal heading-10">Dark theme built from&nbsp;scratch — a&nbsp;deliberate choice for&nbsp;B2B trust</h2>
-      <p class="reveal text-38">In&nbsp;the&nbsp;customs and&nbsp;logistics space, a&nbsp;dark interface reads as&nbsp;serious, professional, and&nbsp;trustworthy. The&nbsp;teal accent provides precise visual contrast and&nbsp;signals attention to&nbsp;detail. Cream headlines on&nbsp;dark backgrounds give warmth without sacrificing readability. All colors, typography, icons, and&nbsp;20+ components were created from&nbsp;zero.</p>
+      <div class="label-5" data-i18n="impos.s04.label">04 — Process / Design System</div>
+      <h2 class="reveal heading-10" data-i18n-html="impos.s04.title">Dark theme built from&nbsp;scratch — a&nbsp;deliberate choice for&nbsp;B2B trust</h2>
+      <p class="reveal text-38" data-i18n-html="impos.s04.body">In&nbsp;the&nbsp;customs and&nbsp;logistics space, a&nbsp;dark interface reads as&nbsp;serious, professional, and&nbsp;trustworthy. The&nbsp;teal accent provides precise visual contrast and&nbsp;signals attention to&nbsp;detail. Cream headlines on&nbsp;dark backgrounds give warmth without sacrificing readability. All colors, typography, icons, and&nbsp;20+ components were created from&nbsp;zero.</p>
 
       <div class="row-26">
         <div class="row-27">
@@ -171,29 +178,29 @@
             </div>
             <img src="uploads/Design system - colors, typography, icons, components-5d5d1559.png" alt="Design system — colors, type, components" class="mockup__img">
           </div>
-          <div class="caption">Design system — colors, typography, icons, components</div>
+          <div class="caption" data-i18n="impos.s04.caption">Design system — colors, typography, icons, components</div>
         </div>
         <div class="row-28">
-          <div class="label-7">Color</div>
-          <p class="text-30">Dark background #141414, teal accent #00C4A0, cream headline #F0EDD6, dark card #1E1E1E — a&nbsp;four‑token palette with&nbsp;no&nbsp;ambiguity</p>
-          <div class="label-7">Typography</div>
-          <p class="text-30">Bold geometric sans for&nbsp;headlines in&nbsp;cream, regular sans for&nbsp;body in&nbsp;muted gray — two weights, two roles, high contrast on&nbsp;dark backgrounds</p>
-          <div class="label-7">Components</div>
-          <p class="body-copy body-copy--sm">Service cards with&nbsp;teal icons, filter sidebars, tabbed review blocks, delivery calculator, accordion FAQ, 4‑format review system, lead capture forms, audio and&nbsp;video players</p>
+          <div class="label-7" data-i18n="impos.s04.color">Color</div>
+          <p class="text-30" data-i18n-html="impos.s04.colorText">Dark background #141414, teal accent #00C4A0, cream headline #F0EDD6, dark card #1E1E1E — a&nbsp;four‑token palette with&nbsp;no&nbsp;ambiguity</p>
+          <div class="label-7" data-i18n="impos.s04.typography">Typography</div>
+          <p class="text-30" data-i18n-html="impos.s04.typographyText">Bold geometric sans for&nbsp;headlines in&nbsp;cream, regular sans for&nbsp;body in&nbsp;muted gray — two weights, two roles, high contrast on&nbsp;dark backgrounds</p>
+          <div class="label-7" data-i18n="impos.s04.components">Components</div>
+          <p class="body-copy body-copy--sm" data-i18n-html="impos.s04.componentsText">Service cards with&nbsp;teal icons, filter sidebars, tabbed review blocks, delivery calculator, accordion FAQ, 4‑format review system, lead capture forms, audio and&nbsp;video players</p>
         </div>
       </div>
     </section>
 
     <!-- 05 HOMEPAGE -->
     <section class="text-28">
-      <div class="label-5">05 — Process / Homepage</div>
-      <h2 class="reveal heading-10">Homepage as&nbsp;the&nbsp;main conversion surface — 15+ sections</h2>
-      <p class="reveal text-32">The&nbsp;homepage serves three visitor types simultaneously: first‑time importers evaluating options, existing clients checking tariffs, and&nbsp;Chinese trade partners looking for&nbsp;a&nbsp;Russian counterpart. The&nbsp;page works through a&nbsp;structured sequence — hero, 8‑service grid, tariff table, cases, reviews, process steps, team, and&nbsp;CTAs.</p>
+      <div class="label-5" data-i18n="impos.s05.label">05 — Process / Homepage</div>
+      <h2 class="reveal heading-10" data-i18n-html="impos.s05.title">Homepage as&nbsp;the&nbsp;main conversion surface — 15+ sections</h2>
+      <p class="reveal text-32" data-i18n-html="impos.s05.body">The&nbsp;homepage serves three visitor types simultaneously: first‑time importers evaluating options, existing clients checking tariffs, and&nbsp;Chinese trade partners looking for&nbsp;a&nbsp;Russian counterpart. The&nbsp;page works through a&nbsp;structured sequence — hero, 8‑service grid, tariff table, cases, reviews, process steps, team, and&nbsp;CTAs.</p>
 
       <div class="text-39">
-        <div class="label-4">05.1 — Hero + Services</div>
-        <h3 class="reveal heading-13">Above the&nbsp;fold: core proposition and&nbsp;all 8&nbsp;services visible</h3>
-        <p class="reveal text-40">The&nbsp;hero leads with&nbsp;"FEA Outsourcing / Import and&nbsp;export under contract" in&nbsp;large cream type on&nbsp;dark background. A&nbsp;"Calculate cost" CTA with&nbsp;teal button is the&nbsp;primary action. Directly below, all 8&nbsp;service types appear as&nbsp;icon cards with&nbsp;short descriptions and&nbsp;pricing callouts — each linking to&nbsp;a&nbsp;dedicated service landing.</p>
+        <div class="label-4" data-i18n="impos.s051.label">05.1 — Hero + Services</div>
+        <h3 class="reveal heading-13" data-i18n-html="impos.s051.title">Above the&nbsp;fold: core proposition and&nbsp;all 8&nbsp;services visible</h3>
+        <p class="reveal text-40" data-i18n-html="impos.s051.body">The&nbsp;hero leads with&nbsp;"FEA Outsourcing / Import and&nbsp;export under contract" in&nbsp;large cream type on&nbsp;dark background. A&nbsp;"Calculate cost" CTA with&nbsp;teal button is the&nbsp;primary action. Directly below, all 8&nbsp;service types appear as&nbsp;icon cards with&nbsp;short descriptions and&nbsp;pricing callouts — each linking to&nbsp;a&nbsp;dedicated service landing.</p>
         <div class="card-2">
           <div class="u-27">
             <span class="mockup__dot mockup__dot--red"></span>
@@ -202,7 +209,7 @@
           </div>
           <img src="uploads/Hero + service grid - all 8 types with icons, descriptions, pricing callouts-051d5f63.png" alt="Hero + service grid screenshot" class="mockup__img">
         </div>
-        <div class="caption">Hero + service grid — all 8&nbsp;types with&nbsp;icons, descriptions, pricing callouts</div>
+        <div class="caption" data-i18n-html="impos.s051.caption">Hero + service grid — all 8&nbsp;types with&nbsp;icons, descriptions, pricing callouts</div>
       </div>
 
       <div class="row-26">
@@ -215,26 +222,26 @@
             </div>
             <img src="uploads/Reviews - 4 format tabs, each presented in its native UI pattern-b03a3cca.png" alt="Reviews page screenshot — any tab" class="mockup__img">
           </div>
-          <div class="caption">Reviews — 4&nbsp;format tabs, each presented in&nbsp;its native UI pattern</div>
+          <div class="caption" data-i18n-html="impos.s052.caption">Reviews — 4&nbsp;format tabs, each presented in&nbsp;its native UI pattern</div>
         </div>
         <div class="row-28">
-          <div class="label-4">05.2 — Social Proof</div>
-          <h3 class="reveal heading-11">Four formats of&nbsp;proof — each presented in&nbsp;its native style</h3>
-          <p class="reveal body-copy body-copy--sm">Reviews are a&nbsp;key conversion driver when stakes are high. IMPOS TRADE accumulated genuine proof in&nbsp;four formats: messenger screenshots, official gratitude letters (including from&nbsp;ROSATOM), audio recordings, and&nbsp;video testimonials. Each format required a&nbsp;different UI pattern. The&nbsp;Reviews section presents all four as&nbsp;tabs on&nbsp;a&nbsp;single page — screenshot cards, document previews, audio players, video grids.</p>
+          <div class="label-4" data-i18n="impos.s052.label">05.2 — Social Proof</div>
+          <h3 class="reveal heading-11" data-i18n-html="impos.s052.title">Four formats of&nbsp;proof — each presented in&nbsp;its native style</h3>
+          <p class="reveal body-copy body-copy--sm" data-i18n-html="impos.s052.body">Reviews are a&nbsp;key conversion driver when stakes are high. IMPOS TRADE accumulated genuine proof in&nbsp;four formats: messenger screenshots, official gratitude letters (including from&nbsp;ROSATOM), audio recordings, and&nbsp;video testimonials. Each format required a&nbsp;different UI pattern. The&nbsp;Reviews section presents all four as&nbsp;tabs on&nbsp;a&nbsp;single page — screenshot cards, document previews, audio players, video grids.</p>
         </div>
       </div>
     </section>
 
     <!-- 06 INNER PAGES -->
     <section class="text-28">
-      <div class="label-5">06 — Process / Inner Pages</div>
-      <h2 class="reveal heading-10">10+ page types — each with&nbsp;its own conversion goal</h2>
-      <p class="reveal text-31">Beyond the&nbsp;homepage, every page type required its own structural logic. The&nbsp;two most complex are shown below.</p>
+      <div class="label-5" data-i18n="impos.s06.label">06 — Process / Inner Pages</div>
+      <h2 class="reveal heading-10" data-i18n-html="impos.s06.title">10+ page types — each with&nbsp;its own conversion goal</h2>
+      <p class="reveal text-31" data-i18n-html="impos.s06.body">Beyond the&nbsp;homepage, every page type required its own structural logic. The&nbsp;two most complex are shown below.</p>
 
       <div class="text-39">
-        <div class="label-4">06.1 — Cases</div>
-        <h3 class="reveal heading-13">Filterable case grid with&nbsp;real route and&nbsp;outcome data</h3>
-        <p class="reveal text-40">The&nbsp;cases section presents 12+ published studies with&nbsp;real numbers: origin city, destination city, cargo weight, incoterms, delivery time, and&nbsp;financial outcome. A&nbsp;filter sidebar allows selection by&nbsp;geography, service type, and&nbsp;cargo category. Each card includes a&nbsp;"Download checklist" CTA for&nbsp;lead capture.</p>
+        <div class="label-4" data-i18n="impos.s061.label">06.1 — Cases</div>
+        <h3 class="reveal heading-13" data-i18n-html="impos.s061.title">Filterable case grid with&nbsp;real route and&nbsp;outcome data</h3>
+        <p class="reveal text-40" data-i18n-html="impos.s061.body">The&nbsp;cases section presents 12+ published studies with&nbsp;real numbers: origin city, destination city, cargo weight, incoterms, delivery time, and&nbsp;financial outcome. A&nbsp;filter sidebar allows selection by&nbsp;geography, service type, and&nbsp;cargo category. Each card includes a&nbsp;"Download checklist" CTA for&nbsp;lead capture.</p>
         <div class="card-2">
           <div class="u-27">
             <span class="mockup__dot mockup__dot--red"></span>
@@ -243,7 +250,7 @@
           </div>
           <img src="uploads/Cases - filterable grid, route data, real financial outcomes, checklist CTA-8d4555c2.png" alt="Cases list page screenshot" class="mockup__img">
         </div>
-        <div class="caption">Cases — filterable grid, route data, real financial outcomes, checklist CTA</div>
+        <div class="caption" data-i18n="impos.s061.caption">Cases — filterable grid, route data, real financial outcomes, checklist CTA</div>
       </div>
 
       <div class="row-26">
@@ -256,21 +263,21 @@
             </div>
             <img src="uploads/Homepage - dark theme, teal accent, full‑cycle FEA outsourcing.png" alt="Service landing page screenshot — with calculator" class="mockup__img">
           </div>
-          <div class="caption">Service landing — calculator, advantages, FAQ, lead capture CTA</div>
+          <div class="caption" data-i18n="impos.s062.caption">Service landing — calculator, advantages, FAQ, lead capture CTA</div>
         </div>
         <div class="row-28">
-          <div class="label-4">06.2 — Service Landing</div>
-          <h3 class="reveal heading-11">Each service gets a&nbsp;standalone landing with&nbsp;calculator and&nbsp;FAQ</h3>
-          <p class="reveal body-copy body-copy--sm">Every service type received its own page with&nbsp;a&nbsp;hero, a&nbsp;delivery calculator, advantages, pricing section, FAQ, and&nbsp;CTA. The&nbsp;China calculator was specified and&nbsp;designed in&nbsp;full — 16&nbsp;origin countries, logistics hubs in&nbsp;10&nbsp;Chinese cities, and&nbsp;5+ Russian delivery cities — and&nbsp;is pending development.</p>
+          <div class="label-4" data-i18n="impos.s062.label">06.2 — Service Landing</div>
+          <h3 class="reveal heading-11" data-i18n-html="impos.s062.title">Each service gets a&nbsp;standalone landing with&nbsp;calculator and&nbsp;FAQ</h3>
+          <p class="reveal body-copy body-copy--sm" data-i18n-html="impos.s062.body">Every service type received its own page with&nbsp;a&nbsp;hero, a&nbsp;delivery calculator, advantages, pricing section, FAQ, and&nbsp;CTA. The&nbsp;China calculator was specified and&nbsp;designed in&nbsp;full — 16&nbsp;origin countries, logistics hubs in&nbsp;10&nbsp;Chinese cities, and&nbsp;5+ Russian delivery cities — and&nbsp;is pending development.</p>
         </div>
       </div>
     </section>
 
     <!-- 07 RESPONSIVE -->
     <section class="text-28">
-      <div class="label-5">07 — Process / Responsive Design</div>
-      <h2 class="reveal heading-10">Five breakpoints — designed in&nbsp;parallel, not retrofitted</h2>
-      <p class="reveal text-33">Each breakpoint required specific layout decisions from&nbsp;the&nbsp;start. The&nbsp;mega‑menu collapses to&nbsp;a&nbsp;hamburger at&nbsp;768px. The&nbsp;4‑column service grid becomes 2&nbsp;columns at&nbsp;768px and&nbsp;single column at&nbsp;480px. Hero text scales from&nbsp;58px (1920px desktop) to&nbsp;32px (320px mobile). The&nbsp;delivery calculator switches from&nbsp;horizontal to&nbsp;vertical card stacking.</p>
+      <div class="label-5" data-i18n="impos.s07.label">07 — Process / Responsive Design</div>
+      <h2 class="reveal heading-10" data-i18n-html="impos.s07.title">Five breakpoints — designed in&nbsp;parallel, not retrofitted</h2>
+      <p class="reveal text-33" data-i18n-html="impos.s07.body">Each breakpoint required specific layout decisions from&nbsp;the&nbsp;start. The&nbsp;mega‑menu collapses to&nbsp;a&nbsp;hamburger at&nbsp;768px. The&nbsp;4‑column service grid becomes 2&nbsp;columns at&nbsp;768px and&nbsp;single column at&nbsp;480px. Hero text scales from&nbsp;58px (1920px desktop) to&nbsp;32px (320px mobile). The&nbsp;delivery calculator switches from&nbsp;horizontal to&nbsp;vertical card stacking.</p>
       <div class="grid-8">
         <div class="sticky-4">
           <div class="card-4">
@@ -281,7 +288,7 @@
             </div>
             <img src="uploads/All 5 breakpoints - 1920 · 1024 · 768 · 480 · 320px-5d8147c6.png" alt="Desktop 1920px screenshot" class="mockup__img">
           </div>
-          <div class="caption">All 5 breakpoints — 1920 · 1024 · 768 · 480 · 320px</div>
+          <div class="caption" data-i18n="impos.s07.caption1">All 5 breakpoints — 1920 · 1024 · 768 · 480 · 320px</div>
         </div>
         <div class="u-44">
           <div>
@@ -293,7 +300,7 @@
               </div>
               <img src="uploads/480px - mobile layout 1.png" alt="Mobile screenshot 1" class="mockup__img">
             </div>
-            <div class="caption">480px — full page scroll</div>
+            <div class="caption" data-i18n="impos.s07.caption2">480px — full page scroll</div>
           </div>
           <div>
             <div class="card-4">
@@ -312,103 +319,103 @@
 
     <!-- 08 NUMBERS & CONTEXT -->
     <section class="text-28">
-      <div class="label-5">08 — Numbers &amp; Context</div>
-      <h2 class="reveal heading-14">The&nbsp;funnel this design feeds</h2>
+      <div class="label-5" data-i18n="impos.s08.label">08 — Numbers &amp; Context</div>
+      <h2 class="reveal heading-14" data-i18n-html="impos.s08.title">The&nbsp;funnel this design feeds</h2>
 
-      <div class="label-4">08.1 — Published Cases</div>
+      <div class="label-4" data-i18n="impos.s081.label">08.1 — Published Cases</div>
       <div class="reveal-group grid-9">
         <div class="reveal surface-9">
-          <span class="item-index">CASE 01</span>
-          <p class="item-body item-body--mt12 item-body--tight">Lathe from&nbsp;Dalian → Zlatoust, 5,630&nbsp;kg</p>
-          <p class="text-41">→ +1,000,000 ₽ recovered</p>
+          <span class="item-index" data-i18n="impos.s081.case1">CASE 01</span>
+          <p class="item-body item-body--mt12 item-body--tight" data-i18n-html="impos.s081.route1">Lathe from&nbsp;Dalian → Zlatoust, 5,630&nbsp;kg</p>
+          <p class="text-41" data-i18n="impos.s081.outcome1">→ +1,000,000 ₽ recovered</p>
         </div>
         <div class="reveal surface-9">
-          <span class="item-index">CASE 02</span>
-          <p class="item-body item-body--mt12 item-body--tight">Laptops from&nbsp;Shenzhen → Moscow, 15,700&nbsp;kg</p>
-          <p class="text-41">→ 22,000,000 ₽ cancelled</p>
+          <span class="item-index" data-i18n="impos.s081.case2">CASE 02</span>
+          <p class="item-body item-body--mt12 item-body--tight" data-i18n-html="impos.s081.route2">Laptops from&nbsp;Shenzhen → Moscow, 15,700&nbsp;kg</p>
+          <p class="text-41" data-i18n="impos.s081.outcome2">→ 22,000,000 ₽ cancelled</p>
         </div>
         <div class="reveal surface-9">
-          <span class="item-index">CASE 03</span>
-          <p class="item-body item-body--mt12 item-body--tight">LED lamps Shenzhen → Chelyabinsk, 11,500&nbsp;kg</p>
-          <p class="text-41">→ full turnkey under&nbsp;2024 sanctions</p>
+          <span class="item-index" data-i18n="impos.s081.case3">CASE 03</span>
+          <p class="item-body item-body--mt12 item-body--tight" data-i18n-html="impos.s081.route3">LED lamps Shenzhen → Chelyabinsk, 11,500&nbsp;kg</p>
+          <p class="text-41" data-i18n-html="impos.s081.outcome3">→ full turnkey under&nbsp;2024 sanctions</p>
         </div>
       </div>
 
-      <div class="label-4">08.2 — Client Operations, 2024</div>
-      <p class="reveal text-42">Figures published by&nbsp;IMPOS TRADE for&nbsp;2024 — the&nbsp;operational funnel the&nbsp;site feeds into.</p>
+      <div class="label-4" data-i18n="impos.s082.label">08.2 — Client Operations, 2024</div>
+      <p class="reveal text-42" data-i18n-html="impos.s082.body">Figures published by&nbsp;IMPOS TRADE for&nbsp;2024 — the&nbsp;operational funnel the&nbsp;site feeds into.</p>
 
       <div class="reveal-group grid-10">
         <div class="reveal surface-3">
           <div class="heading-15">4,778</div>
-          <div class="text-43">quote requests processed</div>
+          <div class="text-43" data-i18n="impos.s082.stat1">quote requests processed</div>
         </div>
         <div class="reveal surface-3">
           <div class="heading-15">443</div>
-          <div class="text-43">foreign trade contracts signed</div>
+          <div class="text-43" data-i18n="impos.s082.stat2">foreign trade contracts signed</div>
         </div>
         <div class="reveal surface-3">
           <div class="heading-15">9.3%</div>
-          <div class="text-43">request‑to‑deal conversion</div>
+          <div class="text-43" data-i18n="impos.s082.stat3">request‑to‑deal conversion</div>
         </div>
       </div>
       <div class="reveal-group grid-11">
         <div class="reveal surface-9">
           <div class="heading-16">2.9B ₽</div>
-          <div class="text-44">import/export turnover</div>
+          <div class="text-44" data-i18n="impos.s082.stat4">import/export turnover</div>
         </div>
         <div class="reveal surface-9">
           <div class="heading-16">53M ₽</div>
-          <div class="text-44">saved for&nbsp;clients on&nbsp;duties</div>
+          <div class="text-44" data-i18n-html="impos.s082.stat5">saved for&nbsp;clients on&nbsp;duties</div>
         </div>
         <div class="reveal surface-9">
           <div class="heading-16">46</div>
-          <div class="text-44">countries transacted with</div>
+          <div class="text-44" data-i18n="impos.s082.stat6">countries transacted with</div>
         </div>
       </div>
-      <p class="text-45">Source: figures published by&nbsp;the&nbsp;client. The&nbsp;design's job is what&nbsp;enters this funnel — the&nbsp;conversion inside it&nbsp;is the&nbsp;company's operation, not mine.</p>
+      <p class="text-45" data-i18n-html="impos.s082.source">Source: figures published by&nbsp;the&nbsp;client. The&nbsp;design's job is what&nbsp;enters this funnel — the&nbsp;conversion inside it&nbsp;is the&nbsp;company's operation, not mine.</p>
     </section>
 
     <!-- 09 CONSTRAINTS -->
     <section class="text-28">
-      <div class="label-5">09 — Constraints</div>
-      <h2 class="reveal heading-12">What shaped the&nbsp;decisions</h2>
+      <div class="label-5" data-i18n="impos.s09.label">09 — Constraints</div>
+      <h2 class="reveal heading-12" data-i18n-html="impos.s09.title">What shaped the&nbsp;decisions</h2>
       <div class="reveal-group grid-4">
-        <div class="reveal surface-3"><span class="item-index item-index--md">01</span><p class="text-34">Serving Russian‑speaking and&nbsp;Chinese‑speaking clients from&nbsp;the&nbsp;same domain required parallel content architecture — every form, CTA, and&nbsp;FAQ category needed a&nbsp;full Chinese‑language equivalent, not just a&nbsp;translation pass. The&nbsp;Chinese layer is designed and&nbsp;specified; the&nbsp;client has not yet deployed it.</p></div>
-        <div class="reveal surface-3"><span class="item-index item-index--md">02</span><p class="text-34">Building trust for&nbsp;high‑stakes B2B decisions without a&nbsp;sales conversation — the&nbsp;site had to&nbsp;surface real proof (case studies with&nbsp;financial outcomes, official letters, audio and&nbsp;video) before any contact is initiated</p></div>
-        <div class="reveal surface-3"><span class="item-index item-index--md">03</span><p class="text-34">13&nbsp;page types and&nbsp;40+ service landings required a&nbsp;complete design system before any page was drawn — components, states, and&nbsp;spacing tokens first</p></div>
+        <div class="reveal surface-3"><span class="item-index item-index--md">01</span><p class="text-34" data-i18n-html="impos.s09.item1">Serving Russian‑speaking and&nbsp;Chinese‑speaking clients from&nbsp;the&nbsp;same domain required parallel content architecture — every form, CTA, and&nbsp;FAQ category needed a&nbsp;full Chinese‑language equivalent, not just a&nbsp;translation pass. The&nbsp;Chinese layer is designed and&nbsp;specified; the&nbsp;client has not yet deployed it.</p></div>
+        <div class="reveal surface-3"><span class="item-index item-index--md">02</span><p class="text-34" data-i18n-html="impos.s09.item2">Building trust for&nbsp;high‑stakes B2B decisions without a&nbsp;sales conversation — the&nbsp;site had to&nbsp;surface real proof (case studies with&nbsp;financial outcomes, official letters, audio and&nbsp;video) before any contact is initiated</p></div>
+        <div class="reveal surface-3"><span class="item-index item-index--md">03</span><p class="text-34" data-i18n-html="impos.s09.item3">13&nbsp;page types and&nbsp;40+ service landings required a&nbsp;complete design system before any page was drawn — components, states, and&nbsp;spacing tokens first</p></div>
       </div>
     </section>
 
     <!-- 10 MEASUREMENT PLAN -->
     <section class="text-28">
-      <div class="label-5">10 — Measurement Plan</div>
-      <h2 class="reveal heading-17">What&nbsp;this design was built to&nbsp;move — and&nbsp;how it&nbsp;would be&nbsp;proven</h2>
-      <p class="reveal text-33">Analytics access sits with&nbsp;the&nbsp;client, so&nbsp;post‑launch data is not mine to&nbsp;publish. Rather than restate scope as&nbsp;if&nbsp;it&nbsp;were outcome, here is what&nbsp;each decision was betting on and&nbsp;how it&nbsp;would be&nbsp;verified in&nbsp;the&nbsp;site's existing analytics.</p>
+      <div class="label-5" data-i18n="impos.s10.label">10 — Measurement Plan</div>
+      <h2 class="reveal heading-17" data-i18n-html="impos.s10.title">What&nbsp;this design was built to&nbsp;move — and&nbsp;how it&nbsp;would be&nbsp;proven</h2>
+      <p class="reveal text-33" data-i18n-html="impos.s10.body">Analytics access sits with&nbsp;the&nbsp;client, so&nbsp;post‑launch data is not mine to&nbsp;publish. Rather than restate scope as&nbsp;if&nbsp;it&nbsp;were outcome, here is what&nbsp;each decision was betting on and&nbsp;how it&nbsp;would be&nbsp;verified in&nbsp;the&nbsp;site's existing analytics.</p>
 
       <div class="row-40">
         <div class="reveal surface-10">
-          <div class="label-6">Primary</div>
-          <h3 class="text-46">Share of&nbsp;organic sessions entering on&nbsp;a&nbsp;service landing, not the&nbsp;homepage</h3>
-          <p class="text-47">The&nbsp;core bet of&nbsp;the&nbsp;40‑landing architecture: 40&nbsp;pages means 40&nbsp;entry points from&nbsp;search, each matched to&nbsp;a&nbsp;specific intent. If&nbsp;organic traffic still lands mostly on&nbsp;the&nbsp;homepage, the&nbsp;architecture did not pay for&nbsp;itself. Verified via&nbsp;entry‑page segmentation.</p>
+          <div class="label-6" data-i18n="impos.s10.primary">Primary</div>
+          <h3 class="text-46" data-i18n-html="impos.s10.metric1.title">Share of&nbsp;organic sessions entering on&nbsp;a&nbsp;service landing, not the&nbsp;homepage</h3>
+          <p class="text-47" data-i18n-html="impos.s10.metric1.body">The&nbsp;core bet of&nbsp;the&nbsp;40‑landing architecture: 40&nbsp;pages means 40&nbsp;entry points from&nbsp;search, each matched to&nbsp;a&nbsp;specific intent. If&nbsp;organic traffic still lands mostly on&nbsp;the&nbsp;homepage, the&nbsp;architecture did not pay for&nbsp;itself. Verified via&nbsp;entry‑page segmentation.</p>
         </div>
         <div class="reveal surface-10">
-          <div class="label-6">Secondary</div>
-          <h3 class="text-46">Conversion delta between sessions that&nbsp;touched a&nbsp;case study and&nbsp;those that&nbsp;did not</h3>
-          <p class="text-47">This case argues the&nbsp;challenge was hierarchy and&nbsp;access to&nbsp;existing proof, not inventing it. This metric tests exactly that&nbsp;claim — whether surfacing real financial outcomes moves intent. Verified by&nbsp;segmenting sessions that&nbsp;reached the&nbsp;cases section against form‑submission goals.</p>
+          <div class="label-6" data-i18n="impos.s10.secondary">Secondary</div>
+          <h3 class="text-46" data-i18n-html="impos.s10.metric2.title">Conversion delta between sessions that&nbsp;touched a&nbsp;case study and&nbsp;those that&nbsp;did not</h3>
+          <p class="text-47" data-i18n-html="impos.s10.metric2.body">This case argues the&nbsp;challenge was hierarchy and&nbsp;access to&nbsp;existing proof, not inventing it. This metric tests exactly that&nbsp;claim — whether surfacing real financial outcomes moves intent. Verified by&nbsp;segmenting sessions that&nbsp;reached the&nbsp;cases section against form‑submission goals.</p>
         </div>
         <div class="reveal surface-10">
-          <div class="label-6">Guardrail</div>
-          <h3 class="text-46">Mobile‑to‑desktop conversion parity</h3>
-          <p class="text-47">Five breakpoints were designed in&nbsp;parallel, not retrofitted. Parity between 0.8 and&nbsp;1.0 confirms that&nbsp;claim; a&nbsp;steep mobile drop‑off would falsify it. Verified in&nbsp;the&nbsp;devices report against the&nbsp;same goal.</p>
+          <div class="label-6" data-i18n="impos.s10.guardrail">Guardrail</div>
+          <h3 class="text-46" data-i18n="impos.s10.metric3.title">Mobile‑to‑desktop conversion parity</h3>
+          <p class="text-47" data-i18n-html="impos.s10.metric3.body">Five breakpoints were designed in&nbsp;parallel, not retrofitted. Parity between 0.8 and&nbsp;1.0 confirms that&nbsp;claim; a&nbsp;steep mobile drop‑off would falsify it. Verified in&nbsp;the&nbsp;devices report against the&nbsp;same goal.</p>
         </div>
       </div>
-      <p class="text-48">A&nbsp;metric that&nbsp;could only confirm the&nbsp;design is not a&nbsp;metric. Each of&nbsp;the&nbsp;three above can come back negative — that&nbsp;is what&nbsp;makes them worth naming.</p>
+      <p class="text-48" data-i18n-html="impos.s10.footer">A&nbsp;metric that&nbsp;could only confirm the&nbsp;design is not a&nbsp;metric. Each of&nbsp;the&nbsp;three above can come back negative — that&nbsp;is what&nbsp;makes them worth naming.</p>
     </section>
 
     <!-- 11 REFLECTION -->
     <section class="text-28">
-      <div class="label-9">11 — Reflection</div>
-      <blockquote class="reveal text-35">
+      <div class="label-9" data-i18n="impos.s11.label">11 — Reflection</div>
+      <blockquote class="reveal text-35" data-i18n-html="impos.s11.quote">
         "The&nbsp;hardest part wasn't the&nbsp;dark theme or&nbsp;the&nbsp;13 page types — it&nbsp;was curation of&nbsp;proof. When a&nbsp;company has 12&nbsp;real case studies with&nbsp;route data and&nbsp;financial outcomes, official letters from&nbsp;ROSATOM, and&nbsp;video testimonials, the&nbsp;design challenge is hierarchy and&nbsp;access — not invention. The&nbsp;architecture had to&nbsp;surface the&nbsp;right proof for&nbsp;the&nbsp;right visitor type before they clicked away."
       </blockquote>
     </section>
@@ -417,53 +424,50 @@
   <nav class="case-switch">
     <div class="case-switch__inner">
       <a href="dariela.html" class="case-switch__link case-switch__link--prev">← Dariela</a>
-      <a href="index.html#work" class="case-switch__link case-switch__link--next">Next: All work →</a>
+      <a href="index.html#work" class="case-switch__link case-switch__link--next" data-i18n="casenav.next.allWork">Next: All work →</a>
     </div>
   </nav>
 
   <section class="site-footer" id="contact">
     <div class="site-footer__top">
       <div>
-        <h2 class="site-footer__title">Let's talk</h2>
-        <p class="site-footer__blurb">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
+        <h2 class="site-footer__title" data-i18n="common.footer.title">Let's talk</h2>
+        <p class="site-footer__blurb" data-i18n="common.footer.blurb">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
         <div class="site-footer__email-row">
           <span class="site-footer__email">arskondesign@gmail.com</span>
-          <button type="button" class="site-footer__copy-btn" id="copy-email-btn">Copy email</button>
+          <button type="button" class="site-footer__copy-btn" id="copy-email-btn" data-i18n="common.footer.copyEmail">Copy email</button>
         </div>
       </div>
       <div class="site-footer__social">
-        <a href="#" class="site-footer__social-link">Telegram</a>
-        <a href="#" class="site-footer__social-link">LinkedIn</a>
-        <a href="#" class="site-footer__social-link">Behance</a>
+        <a href="https://t.me/ArskonDesign" target="_blank" rel="noopener noreferrer" class="site-footer__social-link">Telegram</a>
       </div>
     </div>
     <div class="site-footer__bottom">
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Arseny K.</div>
-        <div class="site-footer__col-body">Product / UX designer<br>Last updated 2026</div>
+        <div class="site-footer__col-title">Arseniy K.</div>
+        <div class="site-footer__col-body" data-i18n-html="common.footer.roleUpdated">Product / UX designer<br>Last updated 2026</div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Work</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.work">Work</div>
         <div class="site-footer__col-body">
-          <a href="interior-decor.html" class="site-footer__col-link">A store for 80,000 products</a>
-          <a href="dariela.html" class="site-footer__col-link">A platform for a food producer</a>
-          <a href="impos-trade.html" class="site-footer__col-link">A site that earns trust first</a>
+          <a href="interior-decor.html" class="site-footer__col-link" data-i18n="common.footer.work.interior">A store for 80,000 products</a>
+          <a href="dariela.html" class="site-footer__col-link" data-i18n="common.footer.work.dariela">A platform for a food producer</a>
+          <a href="impos-trade.html" class="site-footer__col-link" data-i18n="common.footer.work.impos">A site that earns trust first</a>
         </div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">About</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.about">About</div>
         <div class="site-footer__col-body">
-          <a href="index.html#about" class="site-footer__col-link">Approach</a>
-          <a href="index.html#about" class="site-footer__col-link">What I do</a>
-          <a href="index.html#about-me" class="site-footer__col-link">About me</a>
+          <a href="index.html#about" class="site-footer__col-link" data-i18n="common.footer.about.approach">Approach</a>
+          <a href="index.html#about" class="site-footer__col-link" data-i18n="common.footer.about.whatIdo">What I do</a>
+          <a href="index.html#about-me" class="site-footer__col-link" data-i18n="common.footer.about.aboutMe">About me</a>
         </div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Contact</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.contact">Contact</div>
         <div class="site-footer__col-body">
-          <a href="mailto:arskon777@gmail.com" class="site-footer__col-link">Email</a>
-          <a href="#" class="site-footer__col-link">Telegram</a>
-          <a href="#" class="site-footer__col-link">LinkedIn</a>
+          <a href="mailto:arskondesign@gmail.com" class="site-footer__col-link" data-i18n="common.footer.contact.email">Email</a>
+          <a href="https://t.me/ArskonDesign" target="_blank" rel="noopener noreferrer" class="site-footer__col-link">Telegram</a>
         </div>
       </div>
     </div>
@@ -472,6 +476,7 @@
 
 </x-dc>
 <script src="./layout.js"></script>
+<script src="./i18n.js"></script>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   setRootRef = (el) => {

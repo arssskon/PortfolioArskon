@@ -17,15 +17,22 @@
 <div ref="{{ setRootRef }}" class="page">
 
   <nav class="nav-home">
-    <a href="index.html" class="nav-home__logo">Arseny K. <span class="nav-home__mark">✱</span></a>
-    <div class="nav-home__links">
-      <a href="index.html#work" class="nav-home__link" data-nav="work">Work<span class="nav-home__link-mark">✱</span></a>
-      <a href="index.html#about" class="nav-home__link" data-nav="about">About<span class="nav-home__link-mark">✱</span></a>
-      <a href="index.html#contact" class="nav-home__link" data-nav="contact">Contact<span class="nav-home__link-mark">✱</span></a>
-    </div>
-    <div class="nav-home__status">
-      <span class="live-dot"></span>
-      <span class="live-label">Available</span>
+    <div class="nav-home__inner container-wide">
+      <a href="index.html" class="nav-home__logo">Arseniy K. <span class="nav-home__mark">✱</span></a>
+      <div class="nav-home__links">
+        <a href="index.html#work" class="nav-home__link" data-nav="work" data-i18n="common.nav.work">Work<span class="nav-home__link-mark">✱</span></a>
+        <a href="index.html#about" class="nav-home__link" data-nav="about" data-i18n="common.nav.about">About<span class="nav-home__link-mark">✱</span></a>
+        <a href="index.html#contact" class="nav-home__link" data-nav="contact" data-i18n="common.nav.contact">Contact<span class="nav-home__link-mark">✱</span></a>
+      </div>
+      <div class="nav-home__status">
+        <div class="lang-toggle" data-lang-toggle>
+          <button type="button" class="lang-toggle__btn" data-lang-btn="ru">RU</button>
+          <span class="lang-toggle__sep">/</span>
+          <button type="button" class="lang-toggle__btn" data-lang-btn="en">EN</button>
+        </div>
+        <span class="live-dot"></span>
+        <span class="live-label" data-i18n="common.status.available">Available</span>
+      </div>
     </div>
   </nav>
 
@@ -34,34 +41,34 @@
     <!-- 01 HERO -->
     <section class="u-25">
       <div class="u-26">02</div>
-      <h1 class="heading-2">
+      <h1 class="heading-2" data-i18n-html="dariela.hero.title">
         Dariela — Food Manufacturer: Redesign &amp; Platform&nbsp;Expansion
       </h1>
       <div class="row-23">
-        <span class="label-2">Redesign</span>
+        <span class="label-2" data-i18n="dariela.hero.tag.redesign">Redesign</span>
         <span class="label-2">UX/UI</span>
         <span class="label-2">B2B / B2C</span>
         <span class="label-2">E‑commerce</span>
-        <span class="label-2">Design system</span>
-        <span class="label-2">10+ pages</span>
+        <span class="label-2" data-i18n="dariela.hero.tag.designSystem">Design system</span>
+        <span class="label-2" data-i18n="dariela.hero.tag.pages">10+ pages</span>
       </div>
 
       <div class="grid-1">
         <div class="surface-3">
           <div class="heading-3">3 → 10+</div>
-          <div class="text-24">pages before → after</div>
+          <div class="text-24" data-i18n="dariela.hero.stat1">pages before → after</div>
         </div>
         <div class="surface-3">
           <div class="heading-3">2</div>
-          <div class="text-24">business streams — B2C retail and&nbsp;B2B wholesale</div>
+          <div class="text-24" data-i18n-html="dariela.hero.stat2">business streams — B2C retail and&nbsp;B2B wholesale</div>
         </div>
         <div class="surface-3">
           <div class="heading-3">7</div>
-          <div class="text-24">new pages created from&nbsp;scratch</div>
+          <div class="text-24" data-i18n-html="dariela.hero.stat3">new pages created from&nbsp;scratch</div>
         </div>
         <div class="surface-3">
           <div class="heading-3">1</div>
-          <div class="text-24">design system built from&nbsp;zero</div>
+          <div class="text-24" data-i18n-html="dariela.hero.stat4">design system built from&nbsp;zero</div>
         </div>
       </div>
 
@@ -78,69 +85,69 @@
           </div>
           <img src="./assets/dariela-homepage.png" alt="Dariela homepage" class="u-28">
         </div>
-        <div class="caption">Homepage — clear value proposition, brand showcase, dual B2B/B2C entry</div>
+        <div class="caption" data-i18n="dariela.caption.homepage">Homepage — clear value proposition, brand showcase, dual B2B/B2C entry</div>
       </div>
 
       <div>
         <div>
-          <div class="label-3">02 — Context &amp; Task</div>
-          <h2 class="reveal heading-4">A&nbsp;3‑page website for&nbsp;a&nbsp;company with&nbsp;two completely different types of&nbsp;buyers</h2>
-          <p class="reveal text-26">
+          <div class="label-3" data-i18n="dariela.s02.label">02 — Context &amp; Task</div>
+          <h2 class="reveal heading-4" data-i18n-html="dariela.s02.title">A&nbsp;3‑page website for&nbsp;a&nbsp;company with&nbsp;two completely different types of&nbsp;buyers</h2>
+          <p class="reveal text-26" data-i18n-html="dariela.s02.p1">
             Dariela is a&nbsp;full‑cycle food manufacturer producing soups, spices, teas, and&nbsp;garnishes under 6 own brands (Дариела, Шафран, Яготка, Матрона, Самобранка, and&nbsp;others). Products are sold both retail (online store, marketplaces WB / Ozon / Яндекс.Маркет) and&nbsp;wholesale to&nbsp;businesses (HoReCa, distributors, retail chains including Магнит and&nbsp;ВкусВилл).
           </p>
-          <p class="reveal text-26">
+          <p class="reveal text-26" data-i18n-html="dariela.s02.p2">
             The&nbsp;site had three pages: homepage, catalog, and&nbsp;product card — all outdated. Users couldn't identify primary CTAs, got lost in&nbsp;the&nbsp;interface, and&nbsp;couldn't complete target actions. The&nbsp;B2B direction — the&nbsp;company's key revenue stream — had no&nbsp;dedicated entry point anywhere on&nbsp;the&nbsp;site.
           </p>
           <div class="reveal row-24">
-            <span class="text-27">6 own brands</span>
+            <span class="text-27" data-i18n="dariela.s02.tag1">6 own brands</span>
             <span class="text-27">WB · Ozon · Яндекс.Маркет</span>
             <span class="text-27">B2C + B2B</span>
-            <span class="text-27">Full production cycle</span>
+            <span class="text-27" data-i18n="dariela.s02.tag4">Full production cycle</span>
           </div>
         </div>
 
         <div class="u-29">
-          <div class="label-4">02.1 — Homepage</div>
-          <h3 class="reveal heading-5">Hero reframed around the&nbsp;business model, not the&nbsp;product&nbsp;image</h3>
-          <p class="reveal body-copy body-copy--sm">The&nbsp;new hero leads with&nbsp;"От поля до&nbsp;полки" — the&nbsp;company's full‑cycle manufacturing proposition. Brands, marketplace presence, and&nbsp;B2B entry points are all visible above the&nbsp;fold.</p>
+          <div class="label-4" data-i18n="dariela.s021.label">02.1 — Homepage</div>
+          <h3 class="reveal heading-5" data-i18n-html="dariela.s021.title">Hero reframed around the&nbsp;business model, not the&nbsp;product&nbsp;image</h3>
+          <p class="reveal body-copy body-copy--sm" data-i18n-html="dariela.s021.body">The&nbsp;new hero leads with&nbsp;"От поля до&nbsp;полки" — the&nbsp;company's full‑cycle manufacturing proposition. Brands, marketplace presence, and&nbsp;B2B entry points are all visible above the&nbsp;fold.</p>
         </div>
 
         <div class="u-29">
-          <div class="label-5">02.2 — Insight / Business Logic</div>
-          <h2 class="reveal heading-6">Two audiences — one site with&nbsp;no&nbsp;path for&nbsp;either</h2>
-          <p class="reveal body-copy">
+          <div class="label-5" data-i18n="dariela.s022.label">02.2 — Insight / Business Logic</div>
+          <h2 class="reveal heading-6" data-i18n-html="dariela.s022.title">Two audiences — one site with&nbsp;no&nbsp;path for&nbsp;either</h2>
+          <p class="reveal body-copy" data-i18n-html="dariela.s022.body">
             Two completely different user types arrived on&nbsp;the&nbsp;same pages: B2C retail buyers choosing a&nbsp;product for&nbsp;home, and&nbsp;B2B procurement managers evaluating wholesale terms or&nbsp;contract manufacturing capabilities. The&nbsp;old site had no&nbsp;separation — both audiences landed on&nbsp;retail‑focused pages with&nbsp;no&nbsp;path to&nbsp;a&nbsp;B2B application, no&nbsp;trust signals for&nbsp;business clients, and&nbsp;no&nbsp;pages explaining cooperation formats.
           </p>
         </div>
 
         <div class="u-29">
-          <div class="label-5">02.3 — Insight / User Path</div>
-          <h2 class="reveal heading-7">Two separate user journeys built into one&nbsp;architecture</h2>
+          <div class="label-5" data-i18n="dariela.s023.label">02.3 — Insight / User Path</div>
+          <h2 class="reveal heading-7" data-i18n-html="dariela.s023.title">Two separate user journeys built into one&nbsp;architecture</h2>
           <div class="reveal-group grid-2">
-            <div class="reveal surface-4"><span class="item-index">01</span><p class="item-body">B2C entry — organic search or&nbsp;marketplace listing brings retail buyer to&nbsp;the&nbsp;site</p></div>
-            <div class="reveal surface-4"><span class="item-index">02</span><p class="item-body">B2C browse — catalog with&nbsp;filters, product card with&nbsp;tabs and&nbsp;buy options</p></div>
-            <div class="reveal surface-4"><span class="item-index">03</span><p class="item-body">B2C convert — add to&nbsp;cart or&nbsp;go to&nbsp;WB / Ozon / Яндекс.Маркет</p></div>
-            <div class="reveal surface-4"><span class="item-index">04</span><p class="item-body">B2B entry — business client arrives looking for&nbsp;wholesale or&nbsp;production partner</p></div>
-            <div class="reveal surface-4"><span class="item-index">05</span><p class="item-body">B2B evaluate — dedicated landing explains formats, segments, terms, certifications</p></div>
-            <div class="reveal surface-4"><span class="item-index">06</span><p class="item-body">B2B convert — application form or&nbsp;commercial offer request</p></div>
+            <div class="reveal surface-4"><span class="item-index">01</span><p class="item-body" data-i18n-html="dariela.s023.step1">B2C entry — organic search or&nbsp;marketplace listing brings retail buyer to&nbsp;the&nbsp;site</p></div>
+            <div class="reveal surface-4"><span class="item-index">02</span><p class="item-body" data-i18n-html="dariela.s023.step2">B2C browse — catalog with&nbsp;filters, product card with&nbsp;tabs and&nbsp;buy options</p></div>
+            <div class="reveal surface-4"><span class="item-index">03</span><p class="item-body" data-i18n-html="dariela.s023.step3">B2C convert — add to&nbsp;cart or&nbsp;go to&nbsp;WB / Ozon / Яндекс.Маркет</p></div>
+            <div class="reveal surface-4"><span class="item-index">04</span><p class="item-body" data-i18n-html="dariela.s023.step4">B2B entry — business client arrives looking for&nbsp;wholesale or&nbsp;production partner</p></div>
+            <div class="reveal surface-4"><span class="item-index">05</span><p class="item-body" data-i18n-html="dariela.s023.step5">B2B evaluate — dedicated landing explains formats, segments, terms, certifications</p></div>
+            <div class="reveal surface-4"><span class="item-index">06</span><p class="item-body" data-i18n-html="dariela.s023.step6">B2B convert — application form or&nbsp;commercial offer request</p></div>
           </div>
-          <p class="reveal body-copy--quiet">The&nbsp;architecture had to&nbsp;serve both journeys without making either audience feel they landed on&nbsp;the&nbsp;wrong site.</p>
+          <p class="reveal body-copy--quiet" data-i18n-html="dariela.s023.summary">The&nbsp;architecture had to&nbsp;serve both journeys without making either audience feel they landed on&nbsp;the&nbsp;wrong site.</p>
         </div>
       </div>
     </section>
 
     <!-- 03 IA -->
     <section class="text-28">
-      <div class="label-5">03 — Process / Information Architecture</div>
-      <h2 class="reveal heading-8">Navigation rebuilt around two entry points — not&nbsp;one</h2>
+      <div class="label-5" data-i18n="dariela.s03.label">03 — Process / Information Architecture</div>
+      <h2 class="reveal heading-8" data-i18n-html="dariela.s03.title">Navigation rebuilt around two entry points — not&nbsp;one</h2>
       <div class="row-25">
         <div class="row-13">
-          <div class="label-6">Problem</div>
-          <p class="body-copy">The&nbsp;old navigation had no&nbsp;B2B sections. Wholesale and&nbsp;contract manufacturing — two separate business directions — were invisible to&nbsp;the&nbsp;visitor. There were no&nbsp;pages for&nbsp;delivery conditions, certificates, contacts, or&nbsp;company information.</p>
+          <div class="label-6" data-i18n="dariela.s03.problem">Problem</div>
+          <p class="body-copy" data-i18n-html="dariela.s03.problemText">The&nbsp;old navigation had no&nbsp;B2B sections. Wholesale and&nbsp;contract manufacturing — two separate business directions — were invisible to&nbsp;the&nbsp;visitor. There were no&nbsp;pages for&nbsp;delivery conditions, certificates, contacts, or&nbsp;company information.</p>
         </div>
         <div class="row-13">
-          <div class="label-6">Solution</div>
-          <p class="body-copy">Main navigation expanded to: About · Our brands · Wholesale supplies · Contract manufacturing · Catalog · News · Gift assortment. B2B directions got standalone landing pages. B2C path leads through catalog → product card → purchase.</p>
+          <div class="label-6" data-i18n="dariela.s03.solution">Solution</div>
+          <p class="body-copy" data-i18n="dariela.s03.solutionText">Main navigation expanded to: About · Our brands · Wholesale supplies · Contract manufacturing · Catalog · News · Gift assortment. B2B directions got standalone landing pages. B2C path leads through catalog → product card → purchase.</p>
         </div>
       </div>
       <div class="card-2">
@@ -151,7 +158,7 @@
         </div>
         <img class="reveal u-28" src="./assets/dariela-nav.png" alt="Homepage navigation">
       </div>
-      <div class="caption">New navigation — B2B and&nbsp;B2C entry points separated at&nbsp;the&nbsp;top level</div>
+      <div class="caption" data-i18n-html="dariela.s03.caption">New navigation — B2B and&nbsp;B2C entry points separated at&nbsp;the&nbsp;top level</div>
     </section>
 
     <!-- 04 DESIGN SYSTEM -->
@@ -166,33 +173,33 @@
             </div>
             <img src="./assets/dariela-design-system.png" alt="Design system" class="u-28">
           </div>
-          <div class="caption">Design system — colors, typography, grid, components</div>
+          <div class="caption" data-i18n="dariela.s04.caption">Design system — colors, typography, grid, components</div>
         </div>
         <div class="row-28">
-          <div class="label-5">04 — Process / Design System</div>
-          <h2 class="heading-9">Design system built from&nbsp;scratch before any page was&nbsp;drawn</h2>
-          <p class="text-29">With&nbsp;10+ page types to&nbsp;design, starting without a&nbsp;system would have created visual inconsistency and&nbsp;slowed down production. The&nbsp;system was built first: color palette, typography scale, grid, spacing, and&nbsp;20+ components covering all interface states.</p>
-          <div class="label-7">Color</div>
-          <p class="text-30">Primary green (brand), supporting greens, neutral grays, status colors (red, orange, yellow)</p>
-          <div class="label-7">Typography</div>
-          <p class="text-30">Display serif for&nbsp;hero statements, bold sans‑serif for&nbsp;headings, regular sans for&nbsp;body — three‑level hierarchy</p>
-          <div class="label-7">Components</div>
-          <p class="body-copy body-copy--sm">Buttons (5 states), input fields, product cards, filter sidebar, tabs, modals, notifications, breadcrumbs, FAQ accordion, achievement cards, news cards, forms</p>
+          <div class="label-5" data-i18n="dariela.s04.label">04 — Process / Design System</div>
+          <h2 class="heading-9" data-i18n-html="dariela.s04.title">Design system built from&nbsp;scratch before any page was&nbsp;drawn</h2>
+          <p class="text-29" data-i18n-html="dariela.s04.body">With&nbsp;10+ page types to&nbsp;design, starting without a&nbsp;system would have created visual inconsistency and&nbsp;slowed down production. The&nbsp;system was built first: color palette, typography scale, grid, spacing, and&nbsp;20+ components covering all interface states.</p>
+          <div class="label-7" data-i18n="dariela.s04.color">Color</div>
+          <p class="text-30" data-i18n="dariela.s04.colorText">Primary green (brand), supporting greens, neutral grays, status colors (red, orange, yellow)</p>
+          <div class="label-7" data-i18n="dariela.s04.typography">Typography</div>
+          <p class="text-30" data-i18n-html="dariela.s04.typographyText">Display serif for&nbsp;hero statements, bold sans‑serif for&nbsp;headings, regular sans for&nbsp;body — three‑level hierarchy</p>
+          <div class="label-7" data-i18n="dariela.s04.components">Components</div>
+          <p class="body-copy body-copy--sm" data-i18n="dariela.s04.componentsText">Buttons (5 states), input fields, product cards, filter sidebar, tabs, modals, notifications, breadcrumbs, FAQ accordion, achievement cards, news cards, forms</p>
         </div>
       </div>
     </section>
 
     <!-- 05 REDESIGNED PAGES -->
     <section class="text-28">
-      <div class="label-5">05 — Process / Redesigned Pages</div>
-      <h2 class="reveal heading-10">Existing pages — completely rethought, not&nbsp;reskinned</h2>
-      <p class="reveal text-31">All three pages existed but&nbsp;failed on&nbsp;usability — each was redesigned with&nbsp;clear hierarchy, explicit CTAs, and&nbsp;integration of&nbsp;new system components.</p>
+      <div class="label-5" data-i18n="dariela.s05.label">05 — Process / Redesigned Pages</div>
+      <h2 class="reveal heading-10" data-i18n-html="dariela.s05.title">Existing pages — completely rethought, not&nbsp;reskinned</h2>
+      <p class="reveal text-31" data-i18n-html="dariela.s05.body">All three pages existed but&nbsp;failed on&nbsp;usability — each was redesigned with&nbsp;clear hierarchy, explicit CTAs, and&nbsp;integration of&nbsp;new system components.</p>
 
       <div class="row-29">
         <div class="row-30">
-          <div class="label-4">05.1 — Catalog</div>
-          <h3 class="heading-11">Catalog with&nbsp;filters and&nbsp;marketplace integration — retail and&nbsp;wholesale in&nbsp;one&nbsp;view</h3>
-          <p class="body-copy body-copy--sm">Left sidebar filters by&nbsp;category, brand, and&nbsp;price. Product grid with&nbsp;3 columns. Each card shows price, add‑to‑cart, and&nbsp;availability on&nbsp;marketplaces. B2B wholesale CTA placed below the&nbsp;grid — visible after browsing, not competing with&nbsp;retail flow.</p>
+          <div class="label-4" data-i18n="dariela.s051.label">05.1 — Catalog</div>
+          <h3 class="heading-11" data-i18n-html="dariela.s051.title">Catalog with&nbsp;filters and&nbsp;marketplace integration — retail and&nbsp;wholesale in&nbsp;one&nbsp;view</h3>
+          <p class="body-copy body-copy--sm" data-i18n-html="dariela.s051.body">Left sidebar filters by&nbsp;category, brand, and&nbsp;price. Product grid with&nbsp;3 columns. Each card shows price, add‑to‑cart, and&nbsp;availability on&nbsp;marketplaces. B2B wholesale CTA placed below the&nbsp;grid — visible after browsing, not competing with&nbsp;retail flow.</p>
         </div>
         <div class="row-27">
           <div class="card-2">
@@ -203,7 +210,7 @@
             </div>
             <img src="./assets/dariela-catalog.png" alt="Catalog page" class="u-28">
           </div>
-          <div class="caption">Catalog — filter sidebar, product grid, marketplace links, B2B CTA below</div>
+          <div class="caption" data-i18n="dariela.s051.caption">Catalog — filter sidebar, product grid, marketplace links, B2B CTA below</div>
         </div>
       </div>
 
@@ -217,27 +224,27 @@
             </div>
             <img src="./assets/dariela-product-card.png" alt="Product card — Харчо сытный" class="u-28">
           </div>
-          <div class="caption">Product card — gallery, tabs, marketplace integration, supply conditions for&nbsp;B2B</div>
+          <div class="caption" data-i18n-html="dariela.s052.caption">Product card — gallery, tabs, marketplace integration, supply conditions for&nbsp;B2B</div>
         </div>
         <div class="row-32">
-          <div class="label-4">05.2 — Product Card</div>
-          <h3 class="heading-11">Product card serves B2C buyers and&nbsp;B2B buyers&nbsp;simultaneously</h3>
-          <p class="body-copy body-copy--sm">Image gallery, price, add‑to‑cart and&nbsp;"Buy now" buttons. Direct links to&nbsp;WB / Ozon / Яндекс.Маркет. Four content tabs: Description · Preparation method · Ingredients · Supply conditions. The&nbsp;"Supply conditions" tab serves B2B buyers without interrupting the&nbsp;retail purchase flow.</p>
+          <div class="label-4" data-i18n="dariela.s052.label">05.2 — Product Card</div>
+          <h3 class="heading-11" data-i18n-html="dariela.s052.title">Product card serves B2C buyers and&nbsp;B2B buyers&nbsp;simultaneously</h3>
+          <p class="body-copy body-copy--sm" data-i18n-html="dariela.s052.body">Image gallery, price, add‑to‑cart and&nbsp;"Buy now" buttons. Direct links to&nbsp;WB / Ozon / Яндекс.Маркет. Four content tabs: Description · Preparation method · Ingredients · Supply conditions. The&nbsp;"Supply conditions" tab serves B2B buyers without interrupting the&nbsp;retail purchase flow.</p>
         </div>
       </div>
     </section>
 
     <!-- 06 B2B PAGES -->
     <section class="text-28">
-      <div class="label-5">06 — Process / New B2B Pages</div>
-      <h2 class="reveal heading-10">B2B had no&nbsp;digital presence — two dedicated landings built from&nbsp;scratch</h2>
-      <p class="text-32">Wholesale supplies and&nbsp;contract manufacturing are separate business directions with&nbsp;different audiences, different decision‑making processes, and&nbsp;different trust requirements. Each received a&nbsp;standalone landing page.</p>
+      <div class="label-5" data-i18n="dariela.s06.label">06 — Process / New B2B Pages</div>
+      <h2 class="reveal heading-10" data-i18n-html="dariela.s06.title">B2B had no&nbsp;digital presence — two dedicated landings built from&nbsp;scratch</h2>
+      <p class="text-32" data-i18n-html="dariela.s06.body">Wholesale supplies and&nbsp;contract manufacturing are separate business directions with&nbsp;different audiences, different decision‑making processes, and&nbsp;different trust requirements. Each received a&nbsp;standalone landing page.</p>
 
       <div class="row-33">
         <div class="row-28">
-          <div class="label-4">06.1 — Wholesale Supplies</div>
-          <h3 class="heading-11">Segmented by&nbsp;buyer type — each segment gets its own&nbsp;argument</h3>
-          <p class="body-copy body-copy--sm">The&nbsp;page segments B2B buyers: small and&nbsp;medium wholesale, large wholesale / distributors, federal and&nbsp;regional retail chains, HoReCa and&nbsp;professional kitchens. Each segment has its own value proposition block. Cooperation scheme shown as&nbsp;a&nbsp;step‑by‑step flow. Application form at&nbsp;the&nbsp;bottom.</p>
+          <div class="label-4" data-i18n="dariela.s061.label">06.1 — Wholesale Supplies</div>
+          <h3 class="heading-11" data-i18n-html="dariela.s061.title">Segmented by&nbsp;buyer type — each segment gets its own&nbsp;argument</h3>
+          <p class="body-copy body-copy--sm" data-i18n-html="dariela.s061.body">The&nbsp;page segments B2B buyers: small and&nbsp;medium wholesale, large wholesale / distributors, federal and&nbsp;regional retail chains, HoReCa and&nbsp;professional kitchens. Each segment has its own value proposition block. Cooperation scheme shown as&nbsp;a&nbsp;step‑by‑step flow. Application form at&nbsp;the&nbsp;bottom.</p>
         </div>
         <div class="row-27">
           <div class="card-2">
@@ -248,7 +255,7 @@
             </div>
             <img class="reveal u-28" src="./assets/dariela-wholesale.png" alt="Wholesale supplies page">
           </div>
-          <div class="caption">Wholesale supplies — buyer segmentation, cooperation scheme, application form</div>
+          <div class="caption" data-i18n="dariela.s061.caption">Wholesale supplies — buyer segmentation, cooperation scheme, application form</div>
         </div>
       </div>
 
@@ -262,28 +269,28 @@
             </div>
             <img class="reveal u-28" src="./assets/dariela-oem.png" alt="Contract manufacturing page">
           </div>
-          <div class="caption">Contract manufacturing — full cycle explanation, OEM categories, certifications</div>
+          <div class="caption" data-i18n="dariela.s062.caption">Contract manufacturing — full cycle explanation, OEM categories, certifications</div>
         </div>
         <div class="row-34">
-          <div class="label-4">06.2 — Contract Manufacturing</div>
-          <h3 class="heading-11">"Your brand. Our production." — a&nbsp;standalone landing for&nbsp;OEM&nbsp;clients</h3>
-          <p class="body-copy body-copy--sm">Contract manufacturing page explains the&nbsp;full cycle: recipe development → raw materials → production → packaging → logistics. Product categories available for&nbsp;OEM release, cooperation formats (by recipe, by&nbsp;TU), certifications (HACCP, ЕАЭС), and&nbsp;client reviews.</p>
+          <div class="label-4" data-i18n="dariela.s062.label">06.2 — Contract Manufacturing</div>
+          <h3 class="heading-11" data-i18n-html="dariela.s062.title">"Your brand. Our production." — a&nbsp;standalone landing for&nbsp;OEM&nbsp;clients</h3>
+          <p class="body-copy body-copy--sm" data-i18n-html="dariela.s062.body">Contract manufacturing page explains the&nbsp;full cycle: recipe development → raw materials → production → packaging → logistics. Product categories available for&nbsp;OEM release, cooperation formats (by recipe, by&nbsp;TU), certifications (HACCP, ЕАЭС), and&nbsp;client reviews.</p>
         </div>
       </div>
     </section>
 
     <!-- 07 INFORMATIONAL PAGES -->
     <section class="text-28">
-      <div class="label-5">07 — Process / Informational Pages</div>
-      <h2 class="reveal heading-10">5 informational pages that B2B clients expect to&nbsp;find — and&nbsp;couldn't&nbsp;before</h2>
-      <p class="text-33">For&nbsp;B2B buyers, missing informational pages = missing trust. No&nbsp;delivery terms, no&nbsp;certificates, no&nbsp;contacts with&nbsp;legal details — each absence is a&nbsp;reason to&nbsp;choose a&nbsp;competitor.</p>
+      <div class="label-5" data-i18n="dariela.s07.label">07 — Process / Informational Pages</div>
+      <h2 class="reveal heading-10" data-i18n-html="dariela.s07.title">5 informational pages that B2B clients expect to&nbsp;find — and&nbsp;couldn't&nbsp;before</h2>
+      <p class="text-33" data-i18n-html="dariela.s07.body">For&nbsp;B2B buyers, missing informational pages = missing trust. No&nbsp;delivery terms, no&nbsp;certificates, no&nbsp;contacts with&nbsp;legal details — each absence is a&nbsp;reason to&nbsp;choose a&nbsp;competitor.</p>
 
       <div class="reveal-group grid-3">
-        <div class="reveal surface-5"><span class="label-8">ABOUT</span><p class="item-body item-body--mt12 item-body--loose14">Full‑cycle manufacturer story, brand portfolio 2026 (6 brands), company values, major retail clients (Магнит, ВкусВилл, etc.), quality control system.</p></div>
-        <div class="reveal surface-5"><span class="label-8">NEWS</span><p class="item-body item-body--mt12 item-body--loose14">Blog with&nbsp;category filters: company news, product updates, industry events. Articles support SEO and&nbsp;demonstrate active presence in&nbsp;the&nbsp;industry.</p></div>
-        <div class="reveal surface-5"><span class="label-8">DELIVERY &amp; PAYMENT</span><p class="item-body item-body--mt12 item-body--loose14">Split by&nbsp;buyer type: individuals (online payment, cash on&nbsp;delivery, pickup) and&nbsp;legal entities (invoice, VAT / non‑VAT, installment). Pickup locations with&nbsp;maps. Delivery partners: СДЭК, ПЭК, Почта России.</p></div>
-        <div class="reveal surface-6"><span class="label-8">CERTIFICATES</span><p class="item-body item-body--mt12 item-body--loose14">Filterable gallery: certificates of&nbsp;conformity, HACCP award, ЕАЭС declarations, diplomas. Downloadable copies. Critical for&nbsp;B2B procurement compliance.</p></div>
-        <div class="reveal surface-6"><span class="label-8">CONTACTS</span><p class="item-body item-body--mt12 item-body--loose14">Legal details (ИНН, ОГРН), address with&nbsp;map, phone, email, Telegram. Application form. Marketplace links.</p></div>
+        <div class="reveal surface-5"><span class="label-8" data-i18n="dariela.s07.about.label">ABOUT</span><p class="item-body item-body--mt12 item-body--loose14" data-i18n="dariela.s07.about.body">Full‑cycle manufacturer story, brand portfolio 2026 (6 brands), company values, major retail clients (Магнит, ВкусВилл, etc.), quality control system.</p></div>
+        <div class="reveal surface-5"><span class="label-8" data-i18n="dariela.s07.news.label">NEWS</span><p class="item-body item-body--mt12 item-body--loose14" data-i18n-html="dariela.s07.news.body">Blog with&nbsp;category filters: company news, product updates, industry events. Articles support SEO and&nbsp;demonstrate active presence in&nbsp;the&nbsp;industry.</p></div>
+        <div class="reveal surface-5"><span class="label-8" data-i18n="dariela.s07.delivery.label">DELIVERY &amp; PAYMENT</span><p class="item-body item-body--mt12 item-body--loose14" data-i18n-html="dariela.s07.delivery.body">Split by&nbsp;buyer type: individuals (online payment, cash on&nbsp;delivery, pickup) and&nbsp;legal entities (invoice, VAT / non‑VAT, installment). Pickup locations with&nbsp;maps. Delivery partners: СДЭК, ПЭК, Почта России.</p></div>
+        <div class="reveal surface-6"><span class="label-8" data-i18n="dariela.s07.certs.label">CERTIFICATES</span><p class="item-body item-body--mt12 item-body--loose14" data-i18n-html="dariela.s07.certs.body">Filterable gallery: certificates of&nbsp;conformity, HACCP award, ЕАЭС declarations, diplomas. Downloadable copies. Critical for&nbsp;B2B procurement compliance.</p></div>
+        <div class="reveal surface-6"><span class="label-8" data-i18n="dariela.s07.contacts.label">CONTACTS</span><p class="item-body item-body--mt12 item-body--loose14" data-i18n-html="dariela.s07.contacts.body">Legal details (ИНН, ОГРН), address with&nbsp;map, phone, email, Telegram. Application form. Marketplace links.</p></div>
       </div>
 
       <div class="row-35">
@@ -296,7 +303,7 @@
             </div>
             <img class="reveal u-28" src="./assets/dariela-delivery.png" alt="Delivery &amp; payment page">
           </div>
-          <div class="caption">Delivery &amp; payment — physical and&nbsp;legal entities, maps, partners</div>
+          <div class="caption" data-i18n-html="dariela.s07.caption.delivery">Delivery &amp; payment — physical and&nbsp;legal entities, maps, partners</div>
         </div>
         <div class="row-36">
           <div class="card-2">
@@ -307,49 +314,49 @@
             </div>
             <img class="reveal u-28" src="./assets/dariela-certificates.png" alt="Certificates page">
           </div>
-          <div class="caption">Certificates — filterable gallery, downloadable documents</div>
+          <div class="caption" data-i18n="dariela.s07.caption.certs">Certificates — filterable gallery, downloadable documents</div>
         </div>
       </div>
     </section>
 
     <!-- 08 CONSTRAINTS -->
     <section class="text-28">
-      <div class="label-5">08 — Constraints</div>
-      <h2 class="reveal heading-12">What shaped the&nbsp;decisions</h2>
+      <div class="label-5" data-i18n="dariela.s08.label">08 — Constraints</div>
+      <h2 class="reveal heading-12" data-i18n-html="dariela.s08.title">What shaped the&nbsp;decisions</h2>
       <div class="reveal-group grid-4">
-        <div class="reveal surface-3"><span class="item-index item-index--md">01</span><p class="text-34">Serving two completely different audiences on&nbsp;the&nbsp;same domain without making either feel they're on&nbsp;the&nbsp;wrong site</p></div>
-        <div class="reveal surface-3"><span class="item-index item-index--md">02</span><p class="text-34">B2B trust requirements (certifications, legal details, terms) had to&nbsp;coexist with&nbsp;B2C simplicity and&nbsp;emotional product photography</p></div>
-        <div class="reveal surface-3"><span class="item-index item-index--md">03</span><p class="text-34">10+ page types to&nbsp;design with&nbsp;visual consistency — required building the&nbsp;design system before any page design</p></div>
+        <div class="reveal surface-3"><span class="item-index item-index--md">01</span><p class="text-34" data-i18n-html="dariela.s08.item1">Serving two completely different audiences on&nbsp;the&nbsp;same domain without making either feel they're on&nbsp;the&nbsp;wrong site</p></div>
+        <div class="reveal surface-3"><span class="item-index item-index--md">02</span><p class="text-34" data-i18n-html="dariela.s08.item2">B2B trust requirements (certifications, legal details, terms) had to&nbsp;coexist with&nbsp;B2C simplicity and&nbsp;emotional product photography</p></div>
+        <div class="reveal surface-3"><span class="item-index item-index--md">03</span><p class="text-34" data-i18n-html="dariela.s08.item3">10+ page types to&nbsp;design with&nbsp;visual consistency — required building the&nbsp;design system before any page design</p></div>
       </div>
     </section>
 
     <!-- 09 RESULTS -->
     <section class="text-28">
-      <div class="label-9">09 — Results</div>
+      <div class="label-9" data-i18n="dariela.s09.label">09 — Results</div>
       <div class="row-37">
         <div class="row-38">
           <span class="result-row__arrow">→</span>
-          <p class="result-row__text">Site expanded from <span class="text-2">3</span> to <span class="text-2">10+</span> page types — all directions of&nbsp;the&nbsp;business are now represented online.</p>
+          <p class="result-row__text" data-i18n-html="dariela.s09.result1">Site expanded from <span class="text-2">3</span> to <span class="text-2">10+</span> page types — all directions of&nbsp;the&nbsp;business are now represented online.</p>
         </div>
         <div class="row-38">
           <span class="result-row__arrow">→</span>
-          <p class="result-row__text">B2B wholesale and&nbsp;contract manufacturing received <span class="text-2">2</span> dedicated landing pages with&nbsp;segmented value propositions and&nbsp;application forms.</p>
+          <p class="result-row__text" data-i18n-html="dariela.s09.result2">B2B wholesale and&nbsp;contract manufacturing received <span class="text-2">2</span> dedicated landing pages with&nbsp;segmented value propositions and&nbsp;application forms.</p>
         </div>
         <div class="row-38">
           <span class="result-row__arrow">→</span>
-          <p class="result-row__text">Delivery, certificates, contacts, and&nbsp;about — <span class="text-2">4</span> trust‑critical pages that B2B buyers require before making contact — added from&nbsp;scratch.</p>
+          <p class="result-row__text" data-i18n-html="dariela.s09.result3">Delivery, certificates, contacts, and&nbsp;about — <span class="text-2">4</span> trust‑critical pages that B2B buyers require before making contact — added from&nbsp;scratch.</p>
         </div>
         <div class="row-39">
           <span class="result-row__arrow">→</span>
-          <p class="result-row__text">Full design system built covering <span class="text-2">20+</span> components for&nbsp;consistent scaling of&nbsp;future pages.</p>
+          <p class="result-row__text" data-i18n-html="dariela.s09.result4">Full design system built covering <span class="text-2">20+</span> components for&nbsp;consistent scaling of&nbsp;future pages.</p>
         </div>
       </div>
     </section>
 
     <!-- 10 REFLECTION -->
     <section class="text-28">
-      <div class="label-9">10 — Reflection</div>
-      <blockquote class="reveal text-35">
+      <div class="label-9" data-i18n="dariela.s10.label">10 — Reflection</div>
+      <blockquote class="reveal text-35" data-i18n-html="dariela.s10.quote">
         "The main challenge wasn't designing 10 pages — it was figuring out how to&nbsp;make a&nbsp;single site serve two audiences with&nbsp;fundamentally different needs without creating two separate websites. The&nbsp;solution was architecture‑first: clear navigation separation, dedicated B2B landings, and&nbsp;a&nbsp;product card that speaks to&nbsp;both buyer types through tabs."
       </blockquote>
     </section>
@@ -358,53 +365,50 @@
   <nav class="case-switch">
     <div class="case-switch__inner">
       <a href="interior-decor.html" class="case-switch__link case-switch__link--prev">← Interior Decor</a>
-      <a href="impos-trade.html" class="case-switch__link case-switch__link--next">Next: IMPOS TRADE →</a>
+      <a href="impos-trade.html" class="case-switch__link case-switch__link--next" data-i18n="casenav.next.impos">Next: IMPOS TRADE →</a>
     </div>
   </nav>
 
   <section class="site-footer" id="contact">
     <div class="site-footer__top">
       <div>
-        <h2 class="site-footer__title">Let's talk</h2>
-        <p class="site-footer__blurb">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
+        <h2 class="site-footer__title" data-i18n="common.footer.title">Let's talk</h2>
+        <p class="site-footer__blurb" data-i18n="common.footer.blurb">Whether it's a role, a project, or a question about a decision inside one of the cases — happy to go deeper than the case pages do.</p>
         <div class="site-footer__email-row">
           <span class="site-footer__email">arskondesign@gmail.com</span>
-          <button type="button" class="site-footer__copy-btn" id="copy-email-btn">Copy email</button>
+          <button type="button" class="site-footer__copy-btn" id="copy-email-btn" data-i18n="common.footer.copyEmail">Copy email</button>
         </div>
       </div>
       <div class="site-footer__social">
-        <a href="#" class="site-footer__social-link">Telegram</a>
-        <a href="#" class="site-footer__social-link">LinkedIn</a>
-        <a href="#" class="site-footer__social-link">Behance</a>
+        <a href="https://t.me/ArskonDesign" target="_blank" rel="noopener noreferrer" class="site-footer__social-link">Telegram</a>
       </div>
     </div>
     <div class="site-footer__bottom">
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Arseny K.</div>
-        <div class="site-footer__col-body">Product / UX designer<br>Last updated 2026</div>
+        <div class="site-footer__col-title">Arseniy K.</div>
+        <div class="site-footer__col-body" data-i18n-html="common.footer.roleUpdated">Product / UX designer<br>Last updated 2026</div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Work</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.work">Work</div>
         <div class="site-footer__col-body">
-          <a href="interior-decor.html" class="site-footer__col-link">A store for 80,000 products</a>
-          <a href="dariela.html" class="site-footer__col-link">A platform for a food producer</a>
-          <a href="impos-trade.html" class="site-footer__col-link">A site that earns trust first</a>
+          <a href="interior-decor.html" class="site-footer__col-link" data-i18n="common.footer.work.interior">A store for 80,000 products</a>
+          <a href="dariela.html" class="site-footer__col-link" data-i18n="common.footer.work.dariela">A platform for a food producer</a>
+          <a href="impos-trade.html" class="site-footer__col-link" data-i18n="common.footer.work.impos">A site that earns trust first</a>
         </div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">About</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.about">About</div>
         <div class="site-footer__col-body">
-          <a href="index.html#about" class="site-footer__col-link">Approach</a>
-          <a href="index.html#about" class="site-footer__col-link">What I do</a>
-          <a href="index.html#about-me" class="site-footer__col-link">About me</a>
+          <a href="index.html#about" class="site-footer__col-link" data-i18n="common.footer.about.approach">Approach</a>
+          <a href="index.html#about" class="site-footer__col-link" data-i18n="common.footer.about.whatIdo">What I do</a>
+          <a href="index.html#about-me" class="site-footer__col-link" data-i18n="common.footer.about.aboutMe">About me</a>
         </div>
       </div>
       <div class="site-footer__col">
-        <div class="site-footer__col-title">Contact</div>
+        <div class="site-footer__col-title" data-i18n="common.nav.contact">Contact</div>
         <div class="site-footer__col-body">
-          <a href="mailto:arskon777@gmail.com" class="site-footer__col-link">Email</a>
-          <a href="#" class="site-footer__col-link">Telegram</a>
-          <a href="#" class="site-footer__col-link">LinkedIn</a>
+          <a href="mailto:arskondesign@gmail.com" class="site-footer__col-link" data-i18n="common.footer.contact.email">Email</a>
+          <a href="https://t.me/ArskonDesign" target="_blank" rel="noopener noreferrer" class="site-footer__col-link">Telegram</a>
         </div>
       </div>
     </div>
@@ -413,6 +417,7 @@
 
 </x-dc>
 <script src="./layout.js"></script>
+<script src="./i18n.js"></script>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
   setRootRef = (el) => {

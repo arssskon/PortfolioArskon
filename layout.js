@@ -63,17 +63,41 @@
     });
   }
 
+  // The .reveal { opacity: 0 } rule survived the migration but the script that
+  // added .visible on scroll was lost — leaving reveal content invisible on the
+  // case pages. An IntersectionObserver desyncs here because the DC runtime
+  // replaces elements after they're observed, so instead we re-query the live
+  // DOM on every scroll tick (same robust pattern as the header scroll-spy) and
+  // reveal whatever has entered the viewport.
+  function revealInView() {
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var els = document.querySelectorAll('.reveal:not(.visible)');
+    for (var i = 0; i < els.length; i++) {
+      var r = els[i].getBoundingClientRect();
+      if (r.top < vh * 0.95 && r.bottom > 0) els[i].classList.add('visible');
+    }
+  }
+
+  var scrollWired = false;
+  function onScrollAll() { onScroll(); revealInView(); }
+
   function init() {
     wireClickDelegation();
-    window.addEventListener('scroll', onScroll, { passive: true });
+    if (!scrollWired) {
+      scrollWired = true;
+      window.addEventListener('scroll', onScrollAll, { passive: true });
+    }
     onScroll();
+    revealInView();
   }
 
   init();
   setTimeout(init, 0);
-  setTimeout(onScroll, 300);
+  setTimeout(function () { onScroll(); revealInView(); }, 300);
+  setTimeout(revealInView, 800);
   window.addEventListener('load', function () {
     init();
     onScroll();
+    revealInView();
   });
 })();

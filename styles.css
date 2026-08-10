@@ -172,6 +172,14 @@ a:hover { color: var(--color-accent); border-bottom-color: var(--color-accent); 
   .nav-home__links { gap: 20px; }
   .live-label { display: none; }
 }
+@media (max-width: 600px) {
+  /* logo + 3 section links + RU/EN don't fit a phone width; drop the center
+     links (users scroll on mobile; footer keeps every link) and keep the
+     header to logo + language toggle + status dot. */
+  .nav-home__links { display: none; }
+  .nav-home__logo { white-space: nowrap; font-size: 14px; }
+  .nav-home__inner { gap: 10px; }
+}
 
 .lang-toggle { display: flex; align-items: center; gap: 6px; }
 .lang-toggle__btn { background: none; border: none; padding: 0; margin: 0; font: inherit; font-family: var(--font-sans); font-size: 13px; font-weight: 500; color: var(--color-text-tertiary); cursor: pointer; }
@@ -369,27 +377,26 @@ a:hover { color: var(--color-accent); border-bottom-color: var(--color-accent); 
   .hero-h1 { font-size: 42px !important; }
   .about-me-cols { flex-direction: column; align-items: center; }
   .about-me-cols > div:first-child { flex: 0 0 auto; width: 100%; max-width: 360px; }
-  /* hero badges are absolutely positioned with desktop pixel offsets
-     (e.g. left: 831px) that overflow the viewport below 1024px; the
-     existing ≤480px rule already solves this, just too late — close the
-     480–768px gap by dropping them into normal flow here too. */
-  .badge { position: static !important; display: inline-block; font-size: 13px !important; transform: none !important; margin: 8px 8px 0 0 !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; }
-  .hero-headline { display: flex !important; flex-direction: column !important; }
+  /* mobile: hide the scattered desktop stickers, show the grouped row instead */
+  .hero-badge-1, .hero-badge-2, .hero-badge-3 { display: none !important; }
+  .hero-badges-m { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+  .text-4 { margin-top: 40px; }
 }
 @media (max-width: 480px) {
   .hero-h1 { font-size: 32px !important; }
-  .hero-headline { padding-bottom: 60px; }
-  .badge { position: static !important; display: inline-block; font-size: 13px !important; transform: none !important; margin: 8px 8px 0 0 !important; top: auto !important; left: auto !important; right: auto !important; bottom: auto !important; }
-  .hero-headline { display: flex !important; flex-direction: column !important; }
 }
 @media (max-width: 768px) {
-  .collage { max-width: 360px; }
-  .sticker--vscode { top: -3%; left: 56%; }
-  .sticker--figma { top: 16%; left: -3%; }
-  .sticker--claude { top: 36%; right: -4%; }
-  .sticker--macbook { top: 48%; left: -5%; }
-  .sticker--bike { bottom: 1%; left: 6%; }
-  .sticker--snowboard { bottom: 0%; right: 6%; }
+  /* stickers keep desktop pixel sizes/positions otherwise and spill onto the
+     text below; re-express them as % of the collage, reset stray top/bottom,
+     force height:auto, and give the collage bottom room for the hanging ones. */
+  .collage { max-width: 300px; margin: 0 auto 72px; }
+  .sticker { width: 26%; height: auto; }
+  .sticker--vscode { top: -6%; left: 52%; right: auto; bottom: auto; width: 22%; }
+  .sticker--figma { top: 12%; left: -8%; right: auto; bottom: auto; width: 20%; }
+  .sticker--claude { top: 34%; left: auto; right: -8%; bottom: auto; width: 20%; }
+  .sticker--macbook { top: 46%; left: -10%; right: auto; bottom: auto; width: 30%; }
+  .sticker--bike { top: auto; bottom: -6%; left: 0; right: auto; width: 40%; }
+  .sticker--snowboard { top: auto; bottom: -2%; right: 0; left: auto; width: 30%; }
 }
 @media (max-width: 480px) {
   .sticker--claude, .sticker--macbook { display: none; }
@@ -414,6 +421,19 @@ a:hover { color: var(--color-accent); border-bottom-color: var(--color-accent); 
 .hero-badge-1 { top: -24px; left: 695px; background: var(--badge-yellow); transform: rotate(-5deg); }
 .hero-badge-3 { top: 347px; left: 831px; background: var(--badge-blue); transform: rotate(-3deg); }
 .hero-badge-2 { top: 346px; left: 1%; background: var(--badge-gold); transform: rotate(4deg); }
+
+/* mobile-only grouped badge row (desktop keeps the scattered stickers above) */
+.hero-badges-m { display: none; }
+.badge-m {
+  font-size: 13px; padding: 7px 14px; border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(13,13,13,0.10); box-shadow: var(--shadow-badge);
+  color: var(--color-ink); white-space: nowrap;
+  background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.14) 0 6px, transparent 6px 16px);
+}
+.badge-m b { text-transform: uppercase; }
+.badge-m--1 { background-color: var(--badge-yellow); }
+.badge-m--2 { background-color: var(--badge-gold); }
+.badge-m--3 { background-color: var(--badge-blue); }
 
 /* ==========================================================================
    Portfolio Homepage — hero, work cards, about

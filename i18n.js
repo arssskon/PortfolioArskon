@@ -767,14 +767,33 @@
     });
   }
 
+  // The chosen language is stored in localStorage and applied on every page
+  // load, so it persists across navigation. But the DC runtime re-renders the
+  // <x-dc> subtree after our scripts run, reverting the DOM to the English text
+  // baked into the HTML — which made the language appear to "reset" when moving
+  // between pages. This observer re-applies the language whenever DC mutates the
+  // DOM (it disconnects while applying so its own text changes don't re-trigger).
+  var mo = null;
+  function watchDom() {
+    if (mo || !('MutationObserver' in window) || !document.body) return;
+    mo = new MutationObserver(function () {
+      mo.disconnect();
+      applyLang();
+      mo.observe(document.body, { childList: true, subtree: true });
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+  }
+
   function init() {
     wireToggleDelegation();
     applyLang();
+    watchDom();
   }
 
   init();
   setTimeout(init, 0);
   setTimeout(applyLang, 300);
+  setTimeout(applyLang, 800);
   window.addEventListener('load', function () {
     init();
   });
